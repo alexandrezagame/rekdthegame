@@ -4,9 +4,8 @@ import useStyles from './styles';
 import React from 'react';
 import CartItem from './CartItem/CartItem';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart }) => {
   const classes = useStyles();
-  <CartItem />;
 
   const renderEmptyCart = () => (
     <div className={classes.zone}>
@@ -26,7 +25,13 @@ const Cart = ({ cart }) => {
   const renderCart = () => (
     <div>
       {cart.line_items.map((lineItem) => {
-        return <CartItem item={lineItem} />;
+        return (
+          <CartItem
+            onUpdateCartQty={onUpdateCartQty}
+            onRemoveFromCart={onRemoveFromCart}
+            item={lineItem}
+          />
+        );
       })}
     </div>
   );
