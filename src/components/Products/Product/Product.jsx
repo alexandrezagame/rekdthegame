@@ -11,6 +11,7 @@ import productImage from '../../../assets/mutt.jpg';
 import useStyles from './styles';
 
 export default function Product({ product, onAddToCart }) {
+  console.log('PRODUCT', product);
   const classes = useStyles();
 
   const handleAddToCart = () => onAddToCart(product.id, 1);
@@ -22,16 +23,21 @@ export default function Product({ product, onAddToCart }) {
           className={classes.productCardImage}
           component="img"
           alt="Contemplative Reptile"
-          src={productImage}
+          src={product.media.source}
           title="Contemplative Reptile"
         />
         <CardContent className={classes.productContent}>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {product.name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography
+            dangerouslySetInnerHTML={{ __html: product.description }}
+            variant="body2"
+            color="textSecondary"
+            component="p"
+          ></Typography>
+          <Typography variant="h5" color="textSecondary" component="h5">
+            ${product.price.formatted}
           </Typography>
 
           <CardActions className={classes.productButtons}>
