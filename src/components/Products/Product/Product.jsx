@@ -11,7 +11,6 @@ import productImage from '../../../assets/mutt.jpg';
 import useStyles from './styles';
 
 export default function Product({ product, onAddToCart }) {
-  console.log('PRODUCT', product);
   const classes = useStyles();
 
   const handleAddToCart = () => onAddToCart(product.id, 1);
