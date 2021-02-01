@@ -18,6 +18,10 @@ export default makeStyles((theme) => ({
   },
   productCardImage: {
     height: 'auto',
+    width: '50%',
+    '@media (max-width: 780px)': {
+      width: '100%',
+    },
   },
   productContent: {
     display: 'flex',
