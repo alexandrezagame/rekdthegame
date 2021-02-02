@@ -13,7 +13,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import { ShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
-import logo from '../../assets/water.jpeg';
+import logo from '../../assets/logosandpics/logo.PNG';
 
 const Navbar = ({ totalItems }) => {
   const classes = useStyles();
