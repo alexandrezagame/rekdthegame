@@ -33,7 +33,6 @@ const PaymentForm = ({
     if (error) {
       console.log('[error]', error);
     } else {
-      console.log('SHIPPING DATA', shippingData)
       const orderData = {
         line_items: checkoutToken.live.line_items,
         customer: {
@@ -61,10 +60,10 @@ const PaymentForm = ({
       nextStep();
     }
   };
-
+  console.log('SHIPPINGDARTA', shippingData)
   return (
     <div>
-      <Review checkoutToken={checkoutToken} />
+      <Review shippingData={shippingData} checkoutToken={checkoutToken} />
       <Divider />
       <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>
         Payment Method
