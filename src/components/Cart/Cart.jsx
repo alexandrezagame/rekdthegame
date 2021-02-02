@@ -4,8 +4,10 @@ import useStyles from './styles';
 import React from 'react';
 import CartItem from './CartItem/CartItem';
 
-const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart }) => {
+const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   const classes = useStyles();
+
+  const handleEmptyCart = () => onEmptyCart()
 
   const renderEmptyCart = () => (
     <div className={classes.zone}>
@@ -34,7 +36,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart }) => {
         );
       })}
       <div>
-        <Button type="button" variant="contained">
+        <Button type="button" variant="contained" onClick={handleEmptyCart}>
           Empty Cart
         </Button>
         <Button

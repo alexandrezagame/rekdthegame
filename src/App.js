@@ -5,8 +5,10 @@ import { useEffect, useState } from 'react';
 import { Cart, Navbar, Products, Checkout } from './components';
 
 function App() {
-  const [cart, setCart] = useState({});
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({});
+  const [order, setOrder] = useState({});
+  const [errorMessage, setErrorMessage] = useState("");
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -35,6 +37,31 @@ function App() {
     setCart(response.cart);
   };
 
+    const handleEmptyCart = async () => {
+    const response = await commerce.cart.empty();
+    setCart(response.cart);
+  };
+  const refreshCart = async () => {
+    const newCart = await commerce.cart.refresh();
+    setCart(newCart);
+  };
+  const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
+    console.log('checkout tokenId', checkoutTokenId)
+    console.log('neworder', newOrder)
+    try {
+      const incomingOrder = await commerce.checkout.capture(
+        checkoutTokenId,
+        newOrder
+      );
+      console.log('INCOMING ORDER', incomingOrder)
+      setOrder(incomingOrder);
+      refreshCart();
+    } catch (error) {
+     
+      setErrorMessage(error.data.error.message);
+    }
+  };
+
   useEffect(() => {
     fetchProducts();
     fetchCart();
@@ -52,14 +79,15 @@ function App() {
             cart={cart}
             onUpdateCartQty={handleUpdateCartQty}
             onRemoveFromCart={handleRemoveFromCart}
+            onEmptyCart={handleEmptyCart}
           />
         </Route>
         <Route exact path="/checkout">
           <Checkout
             cart={cart}
-            // order={order}
-            // onCaptureCheckout={handleCaptureCheckout}
-            // error={errorMessage}
+            order={order}
+            onCaptureCheckout={handleCaptureCheckout}
+            error={errorMessage}
           />
         </Route>
       </Switch>
