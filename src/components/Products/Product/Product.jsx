@@ -6,11 +6,26 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import productImage from '../../../assets/logosandpics/game.JPG';
 
 import useStyles from './styles';
+import { useAlert } from "react-alert";
+
+const randomAlertMessage = () => {
+  const quoteArray = [
+    "1,500 Games added to cart!",
+    "Today we are eating!",
+    "Your father is proud.",
+    "Credit card cloned."
+  ]
+
+  const randomQuote = quoteArray[Math.floor(Math.random() * quoteArray.length)];
+  return randomQuote
+}
+
+
 
 export default function Product({ product, onAddToCart }) {
+    const alert = useAlert();
   const classes = useStyles();
 
   const handleAddToCart = () => onAddToCart(product.id, 1);
@@ -44,7 +59,10 @@ export default function Product({ product, onAddToCart }) {
               size="small"
               color="primary"
               variant="contained"
-              onClick={handleAddToCart}
+              onClick={() => {
+                handleAddToCart()
+                alert.success(randomAlertMessage());
+              }}
             >
               Buy
             </Button>

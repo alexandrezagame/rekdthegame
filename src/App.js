@@ -4,6 +4,17 @@ import { commerce } from './lib/commerce';
 import { useEffect, useState } from 'react';
 import { Cart, Navbar, Products, Checkout } from './components';
 
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+
+
+const options = {
+  timeout: 5000,
+  position: positions.BOTTOM_CENTER
+};
+
+
+
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
@@ -68,6 +79,7 @@ function App() {
   }, []);
 
   return (
+    <Provider template={AlertTemplate} {...options}>
     <Router>
       <Navbar totalItems={cart.total_items} />
       <Switch>
@@ -92,6 +104,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
+     </Provider>
   );
 }
 
