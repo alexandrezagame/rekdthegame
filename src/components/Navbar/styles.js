@@ -1,10 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
-  toolbarMargin: {
-    ...theme.mixins.toolbar,
-    marginBottom: '3em',
-  },
   appBar: {
     backgroundColor: 'red',
   },
@@ -21,7 +17,13 @@ export default makeStyles((theme) => ({
   },
   button: {
     position: 'fixed',
+    top: '15px',
+  },
+  buttonCart: {
+    position: 'fixed',
     right: '0',
     marginRight: '20px',
+    top: '15px',
+    height: '150px',
   },
 }));

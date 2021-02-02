@@ -17,6 +17,7 @@ import logo from '../../assets/logosandpics/logo.PNG';
 
 const Navbar = ({ totalItems }) => {
   const classes = useStyles();
+
   return (
     <>
       <AppBar position="fixed" className={classes.appBar} color="inherit">
@@ -30,7 +31,7 @@ const Navbar = ({ totalItems }) => {
           >
             <img
               src={logo}
-              alt="commerce.js"
+              alt="Rekd the game"
               height="25px"
               className={classes.image}
             />
@@ -48,7 +49,8 @@ const Navbar = ({ totalItems }) => {
             >
               <FacebookIcon />
             </Link>
-
+          </div>
+          <div className={classes.buttonCart}>
             <IconButton
               component={Link}
               to="/cart"
