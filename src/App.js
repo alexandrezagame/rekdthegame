@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 import { useEffect, useState } from 'react';
-import { Cart, Navbar, Products } from './components';
+import { Cart, Navbar, Products, Checkout } from './components';
 
 function App() {
   const [cart, setCart] = useState({});
@@ -52,6 +52,14 @@ function App() {
             cart={cart}
             onUpdateCartQty={handleUpdateCartQty}
             onRemoveFromCart={handleRemoveFromCart}
+          />
+        </Route>
+        <Route exact path="/checkout">
+          <Checkout
+            cart={cart}
+            // order={order}
+            // onCaptureCheckout={handleCaptureCheckout}
+            // error={errorMessage}
           />
         </Route>
       </Switch>

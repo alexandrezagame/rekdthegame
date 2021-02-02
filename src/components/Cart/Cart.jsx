@@ -1,4 +1,4 @@
-import { Container, Typography } from '@material-ui/core';
+import { Button, Container, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import useStyles from './styles';
 import React from 'react';
@@ -33,6 +33,19 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart }) => {
           />
         );
       })}
+      <div>
+        <Button type="button" variant="contained">
+          Empty Cart
+        </Button>
+        <Button
+          component={Link}
+          to="/checkout"
+          type="button"
+          variant="contained"
+        >
+          Checkout
+        </Button>
+      </div>
     </div>
   );
 
