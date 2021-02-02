@@ -2,24 +2,21 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 import { useEffect, useState } from 'react';
-import { Cart, Navbar, Products, Checkout } from './components';
+import { Cart, Navbar, Products, Checkout, ProductPage } from './components';
 
-import { positions, Provider } from "react-alert";
-import AlertTemplate from "react-alert-template-basic";
-
+import { positions, Provider } from 'react-alert';
+import AlertTemplate from 'react-alert-template-basic';
 
 const options = {
   timeout: 5000,
-  position: positions.BOTTOM_CENTER
+  position: positions.BOTTOM_CENTER,
 };
-
-
 
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState('');
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -48,7 +45,7 @@ function App() {
     setCart(response.cart);
   };
 
-    const handleEmptyCart = async () => {
+  const handleEmptyCart = async () => {
     const response = await commerce.cart.empty();
     setCart(response.cart);
   };
@@ -57,18 +54,17 @@ function App() {
     setCart(newCart);
   };
   const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
-    console.log('checkout tokenId', checkoutTokenId)
-    console.log('neworder', newOrder)
+    console.log('checkout tokenId', checkoutTokenId);
+    console.log('neworder', newOrder);
     try {
       const incomingOrder = await commerce.checkout.capture(
         checkoutTokenId,
         newOrder
       );
-      console.log('INCOMING ORDER', incomingOrder)
+      console.log('INCOMING ORDER', incomingOrder);
       setOrder(incomingOrder);
       refreshCart();
     } catch (error) {
-     
       setErrorMessage(error.data.error.message);
     }
   };
@@ -80,31 +76,34 @@ function App() {
 
   return (
     <Provider template={AlertTemplate} {...options}>
-    <Router>
-      <Navbar totalItems={cart.total_items} />
-      <Switch>
-        <Route exact path="/">
-          <Products products={products} onAddToCart={handleAddToCart} />
-        </Route>
-        <Route exact path="/cart">
-          <Cart
-            cart={cart}
-            onUpdateCartQty={handleUpdateCartQty}
-            onRemoveFromCart={handleRemoveFromCart}
-            onEmptyCart={handleEmptyCart}
-          />
-        </Route>
-        <Route exact path="/checkout">
-          <Checkout
-            cart={cart}
-            order={order}
-            onCaptureCheckout={handleCaptureCheckout}
-            error={errorMessage}
-          />
-        </Route>
-      </Switch>
-    </Router>
-     </Provider>
+      <Router>
+        <Navbar totalItems={cart.total_items} />
+        <Switch>
+          <Route exact path="/">
+            <Products products={products} onAddToCart={handleAddToCart} />
+          </Route>
+          <Route exact path="/cart">
+            <Cart
+              cart={cart}
+              onUpdateCartQty={handleUpdateCartQty}
+              onRemoveFromCart={handleRemoveFromCart}
+              onEmptyCart={handleEmptyCart}
+            />
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout
+              cart={cart}
+              order={order}
+              onCaptureCheckout={handleCaptureCheckout}
+              error={errorMessage}
+            />
+          </Route>
+          <Route exact path="/productpage">
+            <ProductPage onAddToCart={handleAddToCart} />
+          </Route>
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
 
