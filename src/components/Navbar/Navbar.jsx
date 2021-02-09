@@ -13,7 +13,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import { ShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
-import logo from '../../assets/logosandpics/logo.PNG';
+import logo from '../../assets/logosandpics/REKD.JPG';
 
 const Navbar = ({ totalItems }) => {
   const classes = useStyles();
@@ -36,7 +36,7 @@ const Navbar = ({ totalItems }) => {
               className={classes.image}
             />
           </Typography>
-          <div className={classes.button}>
+          <div className={classes.socialmediabutton}>
             <Link
               to={{ pathname: 'https://www.instagram.com/rekdthegame/' }}
               target="_blank"
@@ -64,7 +64,7 @@ const Navbar = ({ totalItems }) => {
           </div>
         </Toolbar>
       </AppBar>
-      <div className={classes.toolbarMargin} />
+      {/* <div className={classes.toolbarMargin} /> */}
     </>
   );
 };

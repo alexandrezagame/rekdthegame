@@ -17,6 +17,16 @@ const randomAlertMessage = () => {
     'Today we are eating!',
     'Your father is proud.',
     'Credit card cloned.',
+    'You better add another one to the cart...',
+    "ABRACADABRA! Nope, you're still uggly.",
+    'and BOOM! Just like that our intern gets paid this month.',
+    'For every game you purchase our founder gets to pay for child support.',
+    'What doesn’t kill you. Disappoints me.',
+    'The people who tolerate you on a daily basis are the real heroes.',
+    'Don’t be ashamed of who you are. That’s your parent’s job.',
+    'You can’t Photoshop personality.',
+    'You have your entire life to be a jerk. Why not take today off?',
+    'Remember, for every game you buy our founders drink a shot in your honor.',
   ];
 
   const randomQuote = quoteArray[Math.floor(Math.random() * quoteArray.length)];

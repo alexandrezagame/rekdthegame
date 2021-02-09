@@ -4,12 +4,10 @@ import Product from './Product/Product';
 import useStyles from './styles';
 
 const Products = ({ products, onAddToCart }) => {
-
   const classes = useStyles();
   if (!products.length) return <p>Loading...</p>;
   return (
     <main className={classes.content}>
-      <div className={classes.toolbar} />
       <Grid container justify="center" spacing={4}>
         {products.map((product) => (
           <Grid key={product.id} item xs={12} sm={12} md={12} lg={12}>

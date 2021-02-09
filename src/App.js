@@ -2,7 +2,15 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 import { useEffect, useState } from 'react';
-import { Cart, Navbar, Products, Checkout, ProductPage } from './components';
+import {
+  Cart,
+  Navbar,
+  Products,
+  Checkout,
+  ProductPage,
+  Hero,
+  Banner,
+} from './components';
 
 import { positions, Provider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
@@ -80,6 +88,8 @@ function App() {
         <Navbar totalItems={cart.total_items} />
         <Switch>
           <Route exact path="/">
+            <Banner />
+            <Hero />
             <Products products={products} onAddToCart={handleAddToCart} />
           </Route>
           <Route exact path="/cart">

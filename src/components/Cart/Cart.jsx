@@ -12,12 +12,11 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   const renderEmptyCart = () => (
     <div className={classes.zone}>
       <Typography variant="subtitle1">
-        You have no items in your shopping cart,
+        Hobos have more stuff in their carts than you,
         <br></br>
         <Link className={classes.link} to="/">
-          start adding some
+          don't be so cheap and start adding some!
         </Link>
-        !
       </Typography>
     </div>
   );

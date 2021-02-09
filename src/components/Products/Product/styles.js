@@ -3,8 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
   product: {
     maxWidth: '80vw',
-    marginTop: '5rem',
+    marginTop: '2rem',
     margin: '0 auto',
+    backgroundColor: 'white',
     '@media (max-width: 780px)': {
       maxWidth: '90vw',
     },

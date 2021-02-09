@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   appBar: {
-    backgroundColor: 'red',
+    backgroundColor: '#FBFBFB',
   },
   title: {
     flexGrow: 1,
@@ -15,9 +15,11 @@ export default makeStyles((theme) => ({
     height: '70px',
     width: 'auto',
   },
-  button: {
+  socialmediabutton: {
     position: 'fixed',
-    top: '15px',
+    top: '25px',
+    textDecoration: 'none',
+    color: 'red',
   },
   buttonCart: {
     position: 'fixed',
