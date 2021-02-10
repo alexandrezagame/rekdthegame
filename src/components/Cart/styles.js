@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   zone: {
-    height: '100vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -37,5 +36,9 @@ export default makeStyles((theme) => ({
     width: '100%',
     height: '20vh',
     justifyContent: 'space-between',
+  },
+  emptyCartImage: {
+    width: '30vw',
+    height: 'auto',
   },
 }));

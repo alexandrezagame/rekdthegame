@@ -1,4 +1,3 @@
-import { CardActionArea } from '@material-ui/core';
 import useStyles from './styles';
 import React, { useState } from 'react';
 import specialFront from '../../assets/logosandpics/special.jpg';
@@ -12,17 +11,13 @@ const SpecialCard = () => {
 
   const classes = useStyles();
 
-  const cardArr = [
-    specialBack1,
-    specialBack2,
-    specialBack3
-  ]
+  const cardArr = [specialBack1, specialBack2, specialBack3];
 
   const getRandomCard = () => {
-    const item = cardArr[Math.floor(Math.random() * 3)]
-    console.log('item', item)
-    return item
-  }
+    const item = cardArr[Math.floor(Math.random() * 3)];
+    console.log('item', item);
+    return item;
+  };
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -31,24 +26,29 @@ const SpecialCard = () => {
   };
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical" flipSpeedBackToFront={0.1} flipSpeedFrontToBack={0.1}>
-            <div className={classes.card}>
-      <img
-        className={classes.card}
-        onClick={handleClick}
-        src={specialFront}
-        alt=""
-      />
+    <ReactCardFlip
+      isFlipped={isFlipped}
+      flipDirection="vertical"
+      flipSpeedBackToFront={0.1}
+      flipSpeedFrontToBack={0.1}
+    >
+      <div className={classes.card}>
+        <img
+          className={classes.card}
+          onClick={handleClick}
+          src={specialFront}
+          alt=""
+        />
       </div>
 
-<div className={classes.card}>
-      <img
-        className={classes.card}
-        onClick={handleClick}
-        src={getRandomCard()}
-        alt=""
-      />
-       </div>
+      <div className={classes.card}>
+        <img
+          className={classes.card}
+          onClick={handleClick}
+          src={getRandomCard()}
+          alt=""
+        />
+      </div>
     </ReactCardFlip>
   );
 };

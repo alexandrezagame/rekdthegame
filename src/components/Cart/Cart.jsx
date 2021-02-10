@@ -3,6 +3,7 @@ import { Container, Typography, Button, Grid } from '@material-ui/core';
 import useStyles from './styles';
 import React from 'react';
 import CartItem from './CartItem/CartItem';
+import EmptyCartImage from '../../assets/logosandpics/rickmorty3.png'
 
 const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   const classes = useStyles();
@@ -11,6 +12,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
 
   const renderEmptyCart = () => (
     <div className={classes.zone}>
+          <img className={classes.emptyCartImage} src={EmptyCartImage} alt=""/>
       <Typography variant="subtitle1">
         Hobos have more stuff in their carts than you,
         <br></br>
@@ -18,6 +20,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
           don't be so cheap and start adding some!
         </Link>
       </Typography>
+
     </div>
   );
 
