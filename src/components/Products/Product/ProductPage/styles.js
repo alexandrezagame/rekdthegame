@@ -7,27 +7,33 @@ export default makeStyles((theme) => ({
   },
   productInfoContainer: {
     display: 'flex',
+    '@media (max-width: 780px)': {
+      flexWrap: 'wrap',
+    },
   },
   productInfo: {
     width: '50%',
-        height: '100vh',
-
+    height: '100vh',
+    '@media (max-width: 780px)': {
+      width: '100%',
+    },
   },
 
- 
   productImageContainer: {
     height: '100vh',
     position: 'relative',
     padding: '1rem',
     width: '50%',
+    '@media (max-width: 780px)': {
+      width: '100%',
+    },
   },
-   productImage: {
+  productImage: {
     position: 'absolute',
-    top: '30%',
+    top: '45%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    height: '400px',
-    width: '400px',
+    height: '600px',
+    width: '600px',
   },
-
 }));

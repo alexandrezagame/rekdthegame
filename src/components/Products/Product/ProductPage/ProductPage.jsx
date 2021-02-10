@@ -1,6 +1,6 @@
 import React from 'react';
 import useStyles from './styles';
-import productImage1 from '../../../../assets/logosandpics/IMG-1771.JPG';
+import Carousel from 'react-material-ui-carousel';
 import productImage2 from '../../../../assets/logosandpics/IMG-1774.JPG';
 import productImage3 from '../../../../assets/logosandpics/IMG-1786.JPG';
 import productImage4 from '../../../../assets/logosandpics/IMG-1792.JPG';
@@ -13,6 +13,18 @@ import productImage10 from '../../../../assets/logosandpics/IMG-4283.JPG';
 
 const ProductPage = ({ onAddToCart }) => {
   const classes = useStyles();
+  const items = [
+    productImage2,
+    productImage3,
+    productImage4,
+    productImage5,
+    productImage6,
+    productImage7,
+    productImage8,
+    productImage9,
+    productImage10,
+  ];
+
   return (
     <div className={classes.content}>
       <div className={classes.toolbar} />
@@ -36,9 +48,19 @@ const ProductPage = ({ onAddToCart }) => {
             ullam ut, quas accusantium sunt.
           </p>
         </div>
-        <div className={classes.productImageContainer}>
-            <img className={classes.productImage} src={productImage2} alt="" />
-        </div>
+        {/* <div className={classes.productImageContainer}> */}
+        <Carousel
+          className={classes.productImageContainer}
+          autoPlay
+          interval="6000"
+          indicators={false}
+          navButtonsAlwaysVisible={true}
+        >
+          {items.map((item, i) => (
+            <img key={i} src={item} className={classes.productImage} />
+          ))}
+        </Carousel>
+        {/* </div> */}
       </div>
     </div>
   );
