@@ -10,6 +10,7 @@ export default makeStyles((theme) => ({
     },
   },
   card: {
+      cursor: 'pointer',
     width: '200px',
     // alignItems: 'center',
     '@media (max-width: 780px)': {
