@@ -10,6 +10,7 @@ import {
   ProductPage,
   Hero,
   Banner,
+  CardFlipper,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -89,6 +90,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Banner />
+            <CardFlipper />
             <Hero />
             <Products products={products} onAddToCart={handleAddToCart} />
           </Route>

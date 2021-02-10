@@ -5,3 +5,4 @@ export { default as Checkout } from './CheckoutForm/Checkout/Checkout';
 export { default as ProductPage } from './Products/Product/ProductPage/ProductPage';
 export { default as Hero } from './Hero/Hero';
 export { default as Banner } from './Banner/Banner';
+export { default as CardFlipper } from './CardFlipper/CardFlipper';
