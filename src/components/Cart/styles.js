@@ -39,6 +39,10 @@ export default makeStyles((theme) => ({
   },
   emptyCartImage: {
     width: '30vw',
+    marginBottom: '1rem',
     height: 'auto',
+    '@media (max-width: 780px)': {
+      width: '100vw',
+    },
   },
 }));
