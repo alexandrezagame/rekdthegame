@@ -13,6 +13,7 @@ import {
   Reviews,
   SplashPage,
   DownloadableGame,
+  Video,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -111,6 +112,7 @@ function App() {
             <Reviews />
             <Products products={products} onAddToCart={handleAddToCart} />
             <DownloadableGame />
+            <Video />
           </Route>
           <Route exact path="/cart">
             <Cart

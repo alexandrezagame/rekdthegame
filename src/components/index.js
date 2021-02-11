@@ -9,3 +9,4 @@ export { default as CardFlipper } from './CardFlipper/CardFlipper';
 export { default as Reviews } from './Reviews/Reviews';
 export { default as SplashPage } from './SplashPage/SplashPage';
 export { default as DownloadableGame } from './DownloadableGame/DownloadableGame';
+export { default as Video } from './Video/Video';

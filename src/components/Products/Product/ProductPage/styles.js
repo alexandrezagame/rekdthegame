@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   content: {
+    marginTop: '2rem',
     backgroundColor: '#D10000',
     height: '100vh',
   },

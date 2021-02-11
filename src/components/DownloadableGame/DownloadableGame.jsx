@@ -29,7 +29,7 @@ const DownloadableGame = () => {
           target="_blank"
           download
         >
-          Download
+          Download pdf
         </Link>
       </Button>
     </Container>

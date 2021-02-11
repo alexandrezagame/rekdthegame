@@ -7,6 +7,7 @@ export default makeStyles(() => ({
     '@media (max-width: 780px)': {
       flexWrap: 'wrap',
     },
+    marginTop: '2rem',
   },
   carouselImage: {
     height: '50vh',
