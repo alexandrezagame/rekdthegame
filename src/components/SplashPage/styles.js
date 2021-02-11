@@ -6,6 +6,9 @@ export default makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    backgroundColor: '#FBFBFB',
+    minHeight: '100vh',
+    minWidth: '100vw',
   },
   splashLogo: {
     height: '200px',

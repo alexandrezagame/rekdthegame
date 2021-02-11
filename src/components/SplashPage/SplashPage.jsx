@@ -12,6 +12,7 @@ const SplashPage = ({ removePage }) => {
         className={classes.splashLogo}
         src={bannerlogo}
         onClick={removePage}
+        alt="card"
       ></img>
       <CardFlipper />
       <Button
