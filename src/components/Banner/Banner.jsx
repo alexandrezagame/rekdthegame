@@ -8,6 +8,7 @@ const Banner = () => {
 
   return (
     <Container className={classes.bannerContainer}>
+      <div className={classes.toolbar} />
       <CardMedia
         className={classes.bannerImage}
         component="img"
