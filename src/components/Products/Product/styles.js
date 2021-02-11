@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import fuCursor from '../../../assets/cursor/xp-middle-finger.cur';
 
 export default makeStyles((theme) => ({
   product: {
@@ -16,6 +17,9 @@ export default makeStyles((theme) => ({
       display: 'flex',
       flexDirection: 'column',
     },
+    '&:hover': {
+      cursor: `url(${fuCursor}), pointer`,
+    },
   },
   productCardImage: {
     height: 'auto',
@@ -31,5 +35,10 @@ export default makeStyles((theme) => ({
   },
   productButtons: {
     margin: '0 auto',
+  },
+  productButton: {
+    '&:hover': {
+      cursor: `url(${fuCursor}), pointer`,
+    },
   },
 }));

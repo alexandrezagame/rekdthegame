@@ -45,7 +45,7 @@ export default function Product({ product, onAddToCart }) {
         <CardMedia
           className={classes.productCardImage}
           component="img"
-          alt="Contemplative Reptile"
+          alt="Rekt The Game"
           src={product.media.source}
           title="Contemplative Reptile"
         />
@@ -68,6 +68,7 @@ export default function Product({ product, onAddToCart }) {
               size="small"
               color="primary"
               variant="contained"
+              className={classes.productButton}
               onClick={() => {
                 handleAddToCart();
                 alert.success(randomAlertMessage());
@@ -77,6 +78,7 @@ export default function Product({ product, onAddToCart }) {
             </Button>
             <Button
               component={Link}
+              className={classes.productButton}
               to="/productpage"
               size="small"
               color="primary"

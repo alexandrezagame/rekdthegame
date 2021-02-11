@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import fuCursor from '../../assets/cursor/xp-middle-finger.cur';
+
 export default makeStyles((theme) => ({
   cardsContainer: {
     display: 'flex',
@@ -10,7 +12,7 @@ export default makeStyles((theme) => ({
     },
   },
   card: {
-      cursor: 'pointer',
+    cursor: `url(${fuCursor}), pointer`,
     width: '200px',
     // alignItems: 'center',
     '@media (max-width: 780px)': {
