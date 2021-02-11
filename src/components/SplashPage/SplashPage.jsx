@@ -8,7 +8,11 @@ const SplashPage = ({ removePage }) => {
   const classes = useStyles();
   return (
     <Container className={classes.splashContainer}>
-      <img className={classes.splashLogo} src={bannerlogo}></img>
+      <img
+        className={classes.splashLogo}
+        src={bannerlogo}
+        onClick={removePage}
+      ></img>
       <CardFlipper />
       <Button
         className={classes.splashButton}

@@ -10,6 +10,7 @@ export default makeStyles((theme) => ({
   splashLogo: {
     height: '200px',
     width: '200px',
+    cursor: `url(${fuCursor}), pointer`,
   },
   splashButton: {
     width: 'auto',

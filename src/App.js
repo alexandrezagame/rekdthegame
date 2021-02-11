@@ -12,6 +12,7 @@ import {
   Banner,
   Reviews,
   SplashPage,
+  DownloadableGame,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -109,6 +110,7 @@ function App() {
             <Hero />
             <Reviews />
             <Products products={products} onAddToCart={handleAddToCart} />
+            <DownloadableGame />
           </Route>
           <Route exact path="/cart">
             <Cart
