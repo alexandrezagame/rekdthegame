@@ -10,9 +10,12 @@ const Video = () => {
     <Container className={classes.videoContainer}>
       <div className={classes.videoWrapper}>
         <ReactPlayer
+          className={classes.video}
           url={video}
           playing={true}
           loop={true}
+          width="100%"
+          height="auto"
           controls={true}
           alt="video"
         />
