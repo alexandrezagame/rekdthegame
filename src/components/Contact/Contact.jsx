@@ -1,5 +1,6 @@
 import React from 'react';
 import useStyles from './styles';
+import { Button } from '@material-ui/core';
 
 const Contact = () => {
   const classes = useStyles();
@@ -7,7 +8,12 @@ const Contact = () => {
   return (
     <div className={classes.contactContainer}>
       <article className={classes.contactForm}>
-        <h3>get in touch</h3>
+        <h3>Wanna Talk?</h3>
+        <p>We believe talking leads to lawsuits, and we’d really rather not.</p>
+        <p>
+          But our lawyer insists we need to give “customer service” or whatever,
+          so…
+        </p>
         <form action="https://formspree.io/f/mjvpznza" method="POST">
           <div className={classes.formGroup}>
             <input
@@ -29,9 +35,14 @@ const Contact = () => {
               className={classes.formControl}
             ></textarea>
           </div>
-          <button type="submit" className={classes.submitButton}>
+          <Button
+            variant="contained"
+            type="submit"
+            color="secondary"
+            className={classes.submitButton}
+          >
             submit
-          </button>
+          </Button>
         </form>
       </article>
     </div>
