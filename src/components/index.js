@@ -7,3 +7,4 @@ export { default as Hero } from './Hero/Hero';
 export { default as Banner } from './Banner/Banner';
 export { default as CardFlipper } from './CardFlipper/CardFlipper';
 export { default as Reviews } from './Reviews/Reviews';
+export { default as SplashPage } from './SplashPage/SplashPage';

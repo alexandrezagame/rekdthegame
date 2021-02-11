@@ -10,8 +10,8 @@ import {
   ProductPage,
   Hero,
   Banner,
-  CardFlipper,
   Reviews,
+  SplashPage,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -27,6 +27,7 @@ function App() {
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
+  const [splashPage, setSplashPage] = useState(true);
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -84,6 +85,20 @@ function App() {
     fetchCart();
   }, []);
 
+  const removeSplashPage = () => {
+    setSplashPage(false);
+  };
+
+  if (splashPage) {
+    return (
+      <Router>
+        <Route path="/">
+          <SplashPage removePage={removeSplashPage} />
+        </Route>
+      </Router>
+    );
+  }
+
   return (
     <Provider template={AlertTemplate} {...options}>
       <Router>
@@ -91,7 +106,6 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Banner />
-            <CardFlipper />
             <Hero />
             <Reviews />
             <Products products={products} onAddToCart={handleAddToCart} />
