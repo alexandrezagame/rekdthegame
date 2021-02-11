@@ -11,3 +11,4 @@ export { default as SplashPage } from './SplashPage/SplashPage';
 export { default as DownloadableGame } from './DownloadableGame/DownloadableGame';
 export { default as Video } from './Video/Video';
 export { default as Contact } from './Contact/Contact';
+export { default as Footer } from './Footer/Footer';

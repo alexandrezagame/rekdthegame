@@ -14,7 +14,8 @@ import {
   SplashPage,
   DownloadableGame,
   Video,
-  Contact
+  Contact,
+  Footer,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -114,7 +115,8 @@ function App() {
             <Products products={products} onAddToCart={handleAddToCart} />
             <DownloadableGame />
             <Video />
-            <Contact/>
+            <Contact />
+            <Footer />
           </Route>
           <Route exact path="/cart">
             <Cart
