@@ -106,7 +106,11 @@ function App() {
   return (
     <Provider template={AlertTemplate} {...options}>
       <Router>
-        <Navbar totalItems={cart.total_items} />
+        <Navbar
+          products={products}
+          onAddToCart={handleAddToCart}
+          totalItems={cart.total_items}
+        />
         <Switch>
           <Route exact path="/">
             <Banner />
