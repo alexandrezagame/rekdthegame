@@ -16,6 +16,7 @@ import {
   Video,
   Contact,
   Footer,
+  PlayOnline,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -119,6 +120,7 @@ function App() {
             <Products products={products} onAddToCart={handleAddToCart} />
             <DownloadableGame />
             <Video />
+            <PlayOnline />
             <Contact />
             <Footer />
           </Route>
@@ -139,7 +141,7 @@ function App() {
             />
           </Route>
           <Route exact path="/productpage">
-            <ProductPage onAddToCart={handleAddToCart} />
+            <ProductPage products={products} onAddToCart={handleAddToCart} />
           </Route>
         </Switch>
       </Router>
