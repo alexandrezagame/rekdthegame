@@ -2,8 +2,10 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(() => ({
   footerContainer: {
     minWidth: '100%',
-    margin: '2rem 0 0 0',
     backgroundColor: 'grey',
+    '@media (max-width: 780px)': {
+      margin: '2rem 0 0 0',
+    },
   },
   contactInfo: {
     color: 'white',

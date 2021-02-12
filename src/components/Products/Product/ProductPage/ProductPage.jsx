@@ -57,8 +57,8 @@ const ProductPage = ({ products, onAddToCart }) => {
       <div className={classes.toolbar} />
       <div className={classes.productInfoContainer}>
         <div className={classes.productInfo}>
-          <h1>PRODUCT PAGE</h1>
-          <p>
+          <h2 className={classes.productParts}>PRODUCT PAGE</h2>
+          <p className={classes.productParts}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
             iste quidem ullam quis, commodi, laudantium architecto ut aut
             inventore omnis placeat? Officia, saepe? Ab rem maiores quas. Velit
@@ -66,7 +66,7 @@ const ProductPage = ({ products, onAddToCart }) => {
             asperiores! In eum ex, amet labore nisi cumque alias asperiores
             ullam ut, quas accusantium sunt.
           </p>
-          <p>
+          <p className={classes.productParts}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
             iste quidem ullam quis, commodi, laudantium architecto ut aut
             inventore omnis placeat? Officia, saepe? Ab rem maiores quas. Velit
@@ -76,6 +76,7 @@ const ProductPage = ({ products, onAddToCart }) => {
           </p>
           <Button
             variant="contained"
+            className={classes.productButton}
             color="secondary"
             onClick={() => {
               handleAddToCart();
@@ -86,7 +87,6 @@ const ProductPage = ({ products, onAddToCart }) => {
             BUY THE GAME
           </Button>
         </div>
-        {/* <div className={classes.productImageContainer}> */}
         <Carousel
           className={classes.productImageContainer}
           autoPlay
@@ -95,10 +95,14 @@ const ProductPage = ({ products, onAddToCart }) => {
           navButtonsAlwaysVisible={true}
         >
           {items.map((item, i) => (
-            <img key={i} src={item} className={classes.productImage} />
+            <img
+              key={i}
+              src={item}
+              className={classes.productImage}
+              alt="game images"
+            />
           ))}
         </Carousel>
-        {/* </div> */}
       </div>
     </div>
   );

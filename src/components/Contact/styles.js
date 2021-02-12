@@ -5,6 +5,7 @@ export default makeStyles(() => ({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: '2rem',
+    marginBottom: '2rem',
     // padding: '5rem 0',
   },
   contactForm: {

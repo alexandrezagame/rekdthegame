@@ -142,6 +142,7 @@ function App() {
           </Route>
           <Route exact path="/productpage">
             <ProductPage products={products} onAddToCart={handleAddToCart} />
+            <Footer />
           </Route>
         </Switch>
       </Router>

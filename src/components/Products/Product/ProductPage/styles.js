@@ -3,8 +3,11 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   content: {
     marginTop: '2rem',
-    backgroundColor: '#D10000',
+    backgroundColor: '#fbfbfb',
     height: '100vh',
+    '@media (max-width: 780px)': {
+      // paddingBottom: '2rem',
+    },
   },
   productInfoContainer: {
     display: 'flex',
@@ -14,19 +17,39 @@ export default makeStyles((theme) => ({
   },
   productInfo: {
     width: '50%',
-    height: '100vh',
+    height: 'auto',
+    color: 'grey',
+    marginTop: '3rem',
+    textAlign: 'center',
+    padding: '1rem',
+    '&& h2': {
+      color: 'red',
+    },
     '@media (max-width: 780px)': {
       width: '100%',
+      height: 'auto',
+      margin: '0 1rem',
+      marginTop: '0',
     },
+  },
+  productParts: {
+    marginBottom: '1rem',
+  },
+  productButton: {
+    marginBottom: '1rem',
   },
 
   productImageContainer: {
-    height: '100vh',
+    height: 'auto',
     position: 'relative',
     padding: '1rem',
     width: '50%',
     '@media (max-width: 780px)': {
       width: '100%',
+      height: '300px',
+      marginLeft: '1rem',
+      marginRight: '1rem',
+      marginBottom: '5rem',
     },
   },
   productImage: {
@@ -36,5 +59,10 @@ export default makeStyles((theme) => ({
     transform: 'translate(-50%, -50%)',
     height: '600px',
     width: '600px',
+    '@media (max-width: 780px)': {
+      width: '100%',
+      height: '300px',
+      marginBottom: '5rem',
+    },
   },
 }));
