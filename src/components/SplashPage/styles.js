@@ -20,5 +20,8 @@ export default makeStyles((theme) => ({
     marginTop: '2rem',
     fontSize: '2rem',
     cursor: `url(${fuCursor}), pointer`,
+    '@media (max-width: 780px)': {
+      marginBottom: '2rem',
+    },
   },
 }));

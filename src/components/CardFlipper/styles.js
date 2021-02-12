@@ -16,7 +16,7 @@ export default makeStyles((theme) => ({
     width: '200px',
     // alignItems: 'center',
     '@media (max-width: 780px)': {
-      width: '100%',
+      width: '150px',
       marginBottom: '0.5rem',
     },
   },
