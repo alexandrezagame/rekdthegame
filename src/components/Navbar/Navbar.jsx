@@ -4,8 +4,6 @@ import {
   Toolbar,
   IconButton,
   Badge,
-  MenuItem,
-  Menu,
   Button,
   Typography,
 } from '@material-ui/core';
@@ -84,13 +82,14 @@ const Navbar = ({ products, onAddToCart, totalItems }) => {
             <Button
               variant="contained"
               color="secondary"
+              className={classes.buttonBuy}
               onClick={() => {
-                    handleAddToCart()
-                    alert.success(randomAlertMessage());
-                }}
+                handleAddToCart();
+                alert.success(randomAlertMessage());
+              }}
             >
               {' '}
-              BUY THE GAME
+              GET REKD
             </Button>
             <IconButton
               component={Link}
