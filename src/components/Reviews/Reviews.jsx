@@ -28,7 +28,12 @@ const Reviews = () => {
         indicators={false}
       >
         {items1.map((item, i) => (
-          <img key={i} src={item} className={classes.carouselImage} />
+          <img
+            key={i}
+            src={item}
+            className={classes.carouselImage}
+            alt="review"
+          />
         ))}
       </Carousel>
       <Carousel
@@ -38,7 +43,12 @@ const Reviews = () => {
         indicators={false}
       >
         {items2.map((item, i) => (
-          <img key={i} src={item} className={classes.carouselImage} />
+          <img
+            key={i}
+            src={item}
+            className={classes.carouselImage}
+            alt="review"
+          />
         ))}
       </Carousel>
       <Carousel
@@ -48,7 +58,12 @@ const Reviews = () => {
         indicators={false}
       >
         {items3.map((item, i) => (
-          <img key={i} src={item} className={classes.carouselImage} />
+          <img
+            key={i}
+            src={item}
+            className={classes.carouselImage}
+            alt="review"
+          />
         ))}
       </Carousel>
     </div>

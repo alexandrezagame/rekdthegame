@@ -14,14 +14,18 @@ export default makeStyles(() => ({
     width: '100%',
     margin: '0 auto',
     '@media (max-width: 780px)': {
-      height: 'auto',
+      height: '30vh',
+      width: 'auto',
     },
   },
   carousel: {
     width: '30%',
     margin: '0 auto',
     '@media (max-width: 780px)': {
-      width: '100vh',
+      height: '30vh',
+      width: 'auto',
+      margin: '0 auto',
+      marginTop: '0.5rem',
     },
   },
 }));
