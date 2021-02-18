@@ -32,13 +32,17 @@ export default makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
+    textAlign: 'center',
   },
   productButtons: {
     margin: '0 auto',
   },
   productButton: {
+    backgroundColor: 'red',
+    color: 'white',
     '&:hover': {
       cursor: `url(${fuCursor}), pointer`,
+      backgroundColor: '#FE654F',
     },
   },
 }));

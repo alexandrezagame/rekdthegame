@@ -6,14 +6,25 @@ export default makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: '#FBFBFB',
+    backgroundColor: 'white',
     minHeight: '100vh',
     minWidth: '100vw',
   },
   splashLogo: {
-    height: '200px',
+    height: '50px',
     width: '200px',
+    border: 'none',
     cursor: `url(${fuCursor}), pointer`,
+    marginTop: '0.5rem',
+    marginBottom: '2rem',
+    '@media (max-width: 780px)': {
+      height: 'auto',
+      width: '100%',
+    },
+  },
+  splashText: {
+    marginBottom: '1rem',
+    fontSize: '1.5rem',
   },
   splashButton: {
     width: 'auto',

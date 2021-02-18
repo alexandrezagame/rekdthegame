@@ -81,7 +81,6 @@ const Navbar = ({ products, onAddToCart, totalItems }) => {
           <div className={classes.buttonCart}>
             <Button
               variant="contained"
-              color="secondary"
               className={classes.buttonBuy}
               onClick={() => {
                 handleAddToCart();

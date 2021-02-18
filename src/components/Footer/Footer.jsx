@@ -12,8 +12,8 @@ const Footer = () => {
         Somewhere in South Florida 🌴 <br></br>Phone: Disconnected
       </Typography>
       <Typography variant="body2" className={classes.footerCopyright}>
-        © 2021, RekdTheGame - Website made painfully by our intern. Seriously,
-        my God, it took for-e-ver. We still love you though ❤️
+        © 2021, RekdTheGame - Website made painfully by our colorblind intern.
+        Seriously, my God, it took for-e-ver. We still love you though ❤️
       </Typography>
     </Container>
   );

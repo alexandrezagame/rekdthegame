@@ -12,6 +12,7 @@ import productImage7 from '../../../../assets/logosandpics/IMG-2204.JPG';
 import productImage8 from '../../../../assets/logosandpics/IMG-3250.JPG';
 import productImage9 from '../../../../assets/logosandpics/IMG-4008.JPG';
 import productImage10 from '../../../../assets/logosandpics/IMG-4283.JPG';
+import aboutus from '../../../../assets/logosandpics/us.jpeg';
 
 const randomAlertMessage = () => {
   const quoteArray = [
@@ -33,6 +34,19 @@ const randomAlertMessage = () => {
 
   const randomQuote = quoteArray[Math.floor(Math.random() * quoteArray.length)];
   return randomQuote;
+};
+
+const contactMessage = () => {
+  const messageArray = [
+    'How about no?',
+    'Fuck you!',
+    'We are busy right now, try us never.',
+    'Shhhhhh',
+    'Why are you so obsessed with me?',
+  ];
+  const randomMessage =
+    messageArray[Math.floor(Math.random() * messageArray.length)];
+  return randomMessage;
 };
 
 const ProductPage = ({ products, onAddToCart }) => {
@@ -57,27 +71,23 @@ const ProductPage = ({ products, onAddToCart }) => {
       <div className={classes.toolbar} />
       <div className={classes.productInfoContainer}>
         <div className={classes.productInfo}>
-          <h2 className={classes.productParts}>PRODUCT PAGE</h2>
+          <h2 className={classes.productParts}>WHAT IS REKD?</h2>
           <p className={classes.productParts}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-            iste quidem ullam quis, commodi, laudantium architecto ut aut
-            inventore omnis placeat? Officia, saepe? Ab rem maiores quas. Velit
-            nostrum pariatur cupiditate laborum praesentium eveniet deserunt
-            asperiores! In eum ex, amet labore nisi cumque alias asperiores
-            ullam ut, quas accusantium sunt.
+            REKD is a game for those who aren't scared of a challenge or
+            blacking out. We designed this game with malice and ill-intent to
+            bring joy and laughter as you see your friends suffer through
+            punishments and challenges.
           </p>
           <p className={classes.productParts}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-            iste quidem ullam quis, commodi, laudantium architecto ut aut
-            inventore omnis placeat? Officia, saepe? Ab rem maiores quas. Velit
-            nostrum pariatur cupiditate laborum praesentium eveniet deserunt
-            asperiores! In eum ex, amet labore nisi cumque alias asperiores
-            ullam ut, quas accusantium sunt.
+            The board is brutal, the cards are hilarious and the game will bring
+            your competitive juices to a whole new level. A drinking game where
+            anything can happen. 10% luck, 20% skill, 15% concentrated power of
+            will, 5.5% pleasure, 52% pain and 102.5% reason to remember the
+            Game. Get ready to get REKD.
           </p>
           <Button
             variant="contained"
             className={classes.productButton}
-            color="secondary"
             onClick={() => {
               handleAddToCart();
               alert.success(randomAlertMessage());
@@ -103,6 +113,40 @@ const ProductPage = ({ products, onAddToCart }) => {
             />
           ))}
         </Carousel>
+      </div>
+      <div className={classes.productInfoContainer}>
+        <div className={classes.productImageUsContainer}>
+          <img
+            src={aboutus}
+            className={classes.productImageUS}
+            alt="game images"
+          />
+        </div>
+        <div className={classes.productInfo}>
+          <h2 className={classes.productParts}>ABOUT US</h2>
+          <p className={classes.productParts}>
+            We are 3 drunken entrepreneurs with a blurry double vision. To make
+            America fun again and spread good times amongst friends. 7 years
+            after graduation we decided to embark in the adventure of revamping
+            and commercializing this game that brought us so much joy in
+            college.
+          </p>
+          <p className={classes.productParts}>
+            REKD is a game that has proven to be a hit at parties and predrinks,
+            that challenges players and creates long lasting memories no one
+            will ever want to talk about again.
+          </p>
+          <Button
+            variant="contained"
+            className={classes.productButton}
+            onClick={() => {
+              alert.success(contactMessage());
+            }}
+          >
+            {' '}
+            GET IN TOUCH
+          </Button>
+        </div>
       </div>
     </div>
   );

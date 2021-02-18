@@ -66,7 +66,6 @@ export default function Product({ product, onAddToCart }) {
           <CardActions className={classes.productButtons}>
             <Button
               size="small"
-              color="primary"
               variant="contained"
               className={classes.productButton}
               onClick={() => {
@@ -81,7 +80,6 @@ export default function Product({ product, onAddToCart }) {
               className={classes.productButton}
               to="/productpage"
               size="small"
-              color="primary"
               variant="contained"
             >
               Learn More

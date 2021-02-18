@@ -115,9 +115,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Banner />
+            <Products products={products} onAddToCart={handleAddToCart} />
             <Hero />
             <Reviews />
-            <Products products={products} onAddToCart={handleAddToCart} />
             <DownloadableGame />
             <Video />
             <PlayOnline />
@@ -142,7 +142,6 @@ function App() {
           </Route>
           <Route exact path="/productpage">
             <ProductPage products={products} onAddToCart={handleAddToCart} />
-            <Footer />
           </Route>
         </Switch>
       </Router>
