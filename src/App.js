@@ -116,12 +116,12 @@ function App() {
           <Route exact path="/">
             <Banner />
             <Products products={products} onAddToCart={handleAddToCart} />
+            <Video />
             <Hero />
             <Reviews />
-            <DownloadableGame />
-            <Video />
             <PlayOnline />
             <Contact />
+            <DownloadableGame />
             <Footer />
           </Route>
           <Route exact path="/cart">

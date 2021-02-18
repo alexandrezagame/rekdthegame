@@ -13,6 +13,7 @@ export default makeStyles(() => ({
       flexWrap: 'wrap',
     },
     marginTop: '2rem',
+    marginBottom: '2rem',
   },
   carouselTitle: {
     textAlign: 'center',

@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import fuCursor from '../../assets/cursor/xp-middle-finger.cur';
+
 export default makeStyles(() => ({
   downloadContainer: {
     marginTop: '2rem',
@@ -21,8 +23,23 @@ export default makeStyles(() => ({
       width: '100%',
     },
   },
+  carouselTitle: {
+    textAlign: 'center',
+    backgroundColor: 'red',
+    color: 'white',
+    fontSize: '4rem',
+    textTransform: 'uppercase',
+    padding: '1rem',
+    '@media (max-width: 780px)': {
+      padding: '2rem',
+    },
+  },
   downloadTitle: {
     marginBottom: '1rem',
+  },
+  downloadContent1: {
+    marginBottom: '1rem',
+    fontWeight: 'bold',
   },
   downloadContent: {
     marginBottom: '1rem',
@@ -30,6 +47,17 @@ export default makeStyles(() => ({
   downloadLink: {
     textDecoration: 'none',
     color: 'white',
+    '&:hover': {
+      cursor: `url(${fuCursor}), pointer`,
+    },
+  },
+  downloadButton: {
+    backgroundColor: 'red',
+    color: 'white',
+    '&:hover': {
+      cursor: `url(${fuCursor}), pointer`,
+      backgroundColor: '#FE654F',
+    },
   },
   image: {
     width: '400px',

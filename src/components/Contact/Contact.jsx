@@ -31,12 +31,27 @@ const Contact = () => {
               placeholder="your email"
               className={classes.formControl}
             />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="card title and description"
-              className={classes.formControl}
-            ></textarea>
+            <div className={classes.formControlCard}>
+              <textarea
+                name="message"
+                maxlength="20"
+                placeholder="Card Type"
+                className={classes.formControl}
+              ></textarea>
+              <textarea
+                name="message"
+                maxlength="30"
+                placeholder="Title"
+                className={classes.formControl}
+              ></textarea>
+              <textarea
+                name="message"
+                maxlength="120"
+                row={15}
+                placeholder="Description"
+                className={classes.formControlDescription}
+              ></textarea>
+            </div>
           </div>
           <Button
             variant="contained"

@@ -12,4 +12,15 @@ export default makeStyles(() => ({
       margin: '0 auto',
     },
   },
+  carouselTitle: {
+    textAlign: 'center',
+    backgroundColor: 'red',
+    color: 'white',
+    fontSize: '4rem',
+    textTransform: 'uppercase',
+    padding: '1rem',
+    '@media (max-width: 780px)': {
+      padding: '2rem',
+    },
+  },
 }));

@@ -18,11 +18,7 @@ const DownloadableGame = () => {
         </p>
       </Typography>
 
-      <Button
-        className={classes.downloadButton}
-        variant="contained"
-        color="secondary"
-      >
+      <Button className={classes.downloadButton} variant="contained">
         <Link
           className={classes.downloadLink}
           to={pdf}

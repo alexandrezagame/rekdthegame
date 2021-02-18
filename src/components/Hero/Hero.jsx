@@ -18,11 +18,6 @@ const Hero = () => {
   return (
     <>
       <div className={classes.container}>
-        <div className={classes.carouselTitle}>
-          <Typography>
-            <h2>A game by savages for savages</h2>
-          </Typography>
-        </div>
         <div className={classes.heroContainer}>
           <Card className={classes.product}>
             <CardActionArea className={classes.productCard}>
