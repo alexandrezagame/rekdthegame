@@ -19,7 +19,6 @@ const SplashPage = ({ removePage }) => {
       <Button
         className={classes.splashButton}
         variant="contained"
-        color="secondary"
         onClick={removePage}
       >
         ENTER

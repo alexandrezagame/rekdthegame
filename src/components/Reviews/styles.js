@@ -1,13 +1,26 @@
 import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(() => ({
+  container: {
+    maxWidth: '100vw',
+    margin: '0 auto',
+  },
   carouselContainer: {
     display: 'flex',
-    maxWidth: '100vw',
+
+    backgroundColor: 'white',
     margin: '0 auto',
     '@media (max-width: 780px)': {
       flexWrap: 'wrap',
     },
     marginTop: '2rem',
+  },
+  carouselTitle: {
+    textAlign: 'center',
+    backgroundColor: 'red',
+    color: 'white',
+    fontSize: '3rem',
+    textTransform: 'uppercase',
+    padding: '1rem',
   },
   carouselImage: {
     height: '50vh',

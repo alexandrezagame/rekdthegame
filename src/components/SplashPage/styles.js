@@ -30,6 +30,11 @@ export default makeStyles((theme) => ({
     width: 'auto',
     marginTop: '2rem',
     fontSize: '2rem',
+    backgroundColor: 'red',
+    color: 'white',
+    '&:hover': {
+      backgroundColor: '#FE654F',
+    },
     cursor: `url(${fuCursor}), pointer`,
     '@media (max-width: 780px)': {
       marginBottom: '2rem',
