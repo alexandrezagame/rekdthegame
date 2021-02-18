@@ -23,7 +23,7 @@ const Reviews = () => {
     <div className={classes.container}>
       <div className={classes.carouselTitle}>
         <Typography>
-          <h3>Things we forced people to say about us.</h3>
+          <h2>Things we forced people to say about us</h2>
         </Typography>
       </div>
       <div className={classes.carouselContainer}>

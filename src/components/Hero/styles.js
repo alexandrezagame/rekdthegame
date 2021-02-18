@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
   heroContainer: {
     padding: '0 1rem 1rem 1rem',
-    backgroundColor: '#FBFBFB',
+    backgroundColor: 'white',
     display: 'flex',
     flexDirection: 'row',
     maxWidth: '100vw',
@@ -14,9 +14,20 @@ export default makeStyles((theme) => ({
       flexWrap: 'wrap',
     },
   },
+  carouselTitle: {
+    textAlign: 'center',
+    backgroundColor: 'red',
+    color: 'white',
+    fontSize: '4rem',
+    textTransform: 'uppercase',
+    padding: '1rem',
+    '@media (max-width: 780px)': {
+      padding: '2rem',
+    },
+  },
   product: {
     maxWidth: '28%',
-    marginTop: '5rem',
+    marginTop: '2rem',
     margin: '0 auto',
     '@media (max-width: 780px)': {
       maxWidth: '100%',

@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
     maxWidth: '100vw',
     margin: '0 auto',
     padding: '0',
-    backgroundColor: '#FBFBFB',
+    backgroundColor: 'white',
     '@media (max-width: 780px)': {
       maxWidth: '100vw',
       flexWrap: 'wrap',

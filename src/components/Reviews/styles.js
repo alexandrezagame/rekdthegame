@@ -18,7 +18,7 @@ export default makeStyles(() => ({
     textAlign: 'center',
     backgroundColor: 'red',
     color: 'white',
-    fontSize: '3rem',
+    fontSize: '4rem',
     textTransform: 'uppercase',
     padding: '1rem',
   },
