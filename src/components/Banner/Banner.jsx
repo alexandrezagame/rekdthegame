@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from './styles';
 import { Container, CardMedia } from '@material-ui/core';
-import bannerlogo from '../../assets/logosandpics/REKD.JPG';
+import bannerlogo from '../../assets/logosandpics/rekdlogo.png';
 
 const Banner = () => {
   const classes = useStyles();

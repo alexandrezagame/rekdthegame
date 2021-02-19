@@ -12,7 +12,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import { ShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
-import logo from '../../assets/logosandpics/REKD.JPG';
+import logo from '../../assets/logosandpics/rekdlogo.png';
 
 import { useAlert } from 'react-alert';
 

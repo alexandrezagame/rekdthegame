@@ -11,8 +11,8 @@ export default makeStyles((theme) => ({
     minWidth: '100vw',
   },
   splashLogo: {
-    height: '50px',
-    width: '200px',
+    height: '150px',
+    width: '300px',
     border: 'none',
     cursor: `url(${fuCursor}), pointer`,
     marginTop: '0.5rem',

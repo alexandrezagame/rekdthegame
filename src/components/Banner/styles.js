@@ -15,9 +15,9 @@ export default makeStyles((theme) => ({
   },
 
   bannerImage: {
-    height: '20vh',
+    height: '200px',
     padding: '0',
-    width: '20vw',
+    width: '300px',
     margin: '0 auto',
     backgroundColor: 'transparent',
 
