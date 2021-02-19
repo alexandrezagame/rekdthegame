@@ -30,7 +30,7 @@ export default makeStyles((theme) => ({
     width: 'auto',
     marginTop: '2rem',
     fontSize: '2rem',
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     '&:hover': {
       backgroundColor: '#FE654F',

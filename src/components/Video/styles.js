@@ -14,7 +14,7 @@ export default makeStyles(() => ({
   },
   carouselTitle: {
     textAlign: 'center',
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     fontSize: '4rem',
     textTransform: 'uppercase',

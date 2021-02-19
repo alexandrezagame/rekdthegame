@@ -8,7 +8,7 @@ export default makeStyles(() => ({
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     padding: '1rem',
   },

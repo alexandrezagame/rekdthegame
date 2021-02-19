@@ -22,7 +22,7 @@ export default makeStyles((theme) => ({
     color: 'red',
   },
   buttonBuy: {
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     '&:hover': {
       cursor: `url(${fuCursor}), pointer`,

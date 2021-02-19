@@ -4,6 +4,7 @@ import fuCursor from '../../assets/cursor/xp-middle-finger.cur';
 export default makeStyles(() => ({
   downloadContainer: {
     marginTop: '2rem',
+    marginBottom: '2rem',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -23,9 +24,10 @@ export default makeStyles(() => ({
       width: '100%',
     },
   },
+
   carouselTitle: {
     textAlign: 'center',
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     fontSize: '4rem',
     textTransform: 'uppercase',
@@ -52,7 +54,7 @@ export default makeStyles(() => ({
     },
   },
   downloadButton: {
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     '&:hover': {
       cursor: `url(${fuCursor}), pointer`,

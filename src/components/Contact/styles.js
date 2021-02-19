@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import fuCursor from '../../assets/cursor/xp-middle-finger.cur';
+
 export default makeStyles(() => ({
   contactContainer: {
     display: 'flex',
@@ -22,6 +24,10 @@ export default makeStyles(() => ({
     },
     // maxWidth: '35rem',
   },
+  contactDescription: {
+    margin: '0 50px',
+    fontSize: '1.2rem',
+  },
   formGroup: {
     padding: '1rem',
     margin: '0 1rem',
@@ -29,21 +35,35 @@ export default makeStyles(() => ({
   formControl: {
     width: '100%',
     padding: '0.5rem',
-    border: 'none',
+    background: 'white',
+    border: '1px solid lightgrey',
+    textAlign: 'center',
     marginBottom: '1.25rem',
-    background: 'lightgrey',
     borderRadius: '0.25rem',
     textTransform: 'uppercase',
     letterSpacing: '0.2rem',
     resize: 'none',
   },
+  carouselTitle: {
+    textAlign: 'center',
+    backgroundColor: '#C40607',
+    color: 'white',
+    fontSize: '4rem',
+    textTransform: 'uppercase',
+    padding: '1rem',
+    '@media (max-width: 780px)': {
+      padding: '2rem',
+    },
+  },
   formControlDescription: {
     width: '100%',
-    height: '150px',
+    height: '130px',
     padding: '0.5rem',
-    border: 'none',
+
     marginBottom: '1.25rem',
-    background: 'lightgrey',
+    background: 'white',
+    border: '1px solid lightgrey',
+    textAlign: 'center',
     borderRadius: '0.25rem',
     textTransform: 'uppercase',
     letterSpacing: '0.2rem',
@@ -58,13 +78,13 @@ export default makeStyles(() => ({
     width: '250px',
     padding: '15px',
   },
-  submitBtn: {
-    display: 'block',
-    width: '100%',
+  submitButton: {
     padding: '1rem',
-    borderBottomLeftRadius: '0.25rem',
-    borderBottomRightRadius: '0.25rem',
-    borderTopRightRadius: 0,
-    borderTopLeftRadius: 0,
+    backgroundColor: '#C40607',
+    color: 'white',
+    '&:hover': {
+      cursor: `url(${fuCursor}), pointer`,
+      backgroundColor: '#FE654F',
+    },
   },
 }));

@@ -3,9 +3,6 @@ export default makeStyles(() => ({
   footerContainer: {
     minWidth: '100%',
     backgroundColor: 'white',
-    '@media (max-width: 780px)': {
-      margin: '2rem 0 0 0',
-    },
   },
   contactInfo: {
     color: 'black',

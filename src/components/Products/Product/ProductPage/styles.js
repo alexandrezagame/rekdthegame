@@ -26,13 +26,13 @@ export default makeStyles((theme) => ({
     textAlign: 'center',
     padding: '1rem',
     '&& h2': {
-      color: 'red',
+      color: '#C40607',
     },
     '@media (max-width: 780px)': {
       width: '100%',
       height: 'auto',
       margin: '0 1rem',
-      marginTop: '0',
+      marginTop: '1rem',
     },
   },
   productParts: {
@@ -40,7 +40,7 @@ export default makeStyles((theme) => ({
   },
   productButton: {
     marginBottom: '1rem',
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     '&:hover': {
       cursor: `url(${fuCursor}), pointer`,
@@ -61,18 +61,6 @@ export default makeStyles((theme) => ({
       marginBottom: '5rem',
     },
   },
-  productImageUsContainer: {
-    height: 'auto',
-    position: 'relative',
-    padding: '1rem',
-    width: '50%',
-    '@media (max-width: 780px)': {
-      width: '100%',
-      height: 'auto',
-      padding: '0',
-      marginBottom: '1rem',
-    },
-  },
   productImage: {
     position: 'absolute',
     top: '45%',
@@ -84,19 +72,34 @@ export default makeStyles((theme) => ({
       width: '100vw',
       height: 'auto',
       marginBottom: '5rem',
+      marginTop: '1rem',
+    },
+  },
+  productImageUsContainer: {
+    height: 'auto',
+    position: 'relative',
+    padding: '1rem',
+    width: '50%',
+    '@media (max-width: 780px)': {
+      width: '100%',
+      height: '20vh',
+      padding: '0',
     },
   },
   productImageUS: {
     width: '60%',
     height: 'auto',
     position: 'absolute',
+
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
   },
   '@media (max-width: 780px)': {
-    width: '100%',
+    width: '300px',
     height: 'auto',
+    left: '48%',
     marginBottom: '1rem',
+    marginTop: '1rem',
   },
 }));

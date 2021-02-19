@@ -38,7 +38,7 @@ export default makeStyles((theme) => ({
     margin: '0 auto',
   },
   productButton: {
-    backgroundColor: 'red',
+    backgroundColor: '#C40607',
     color: 'white',
     '&:hover': {
       cursor: `url(${fuCursor}), pointer`,

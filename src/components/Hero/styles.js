@@ -14,20 +14,10 @@ export default makeStyles((theme) => ({
       flexWrap: 'wrap',
     },
   },
-  carouselTitle: {
-    textAlign: 'center',
-    backgroundColor: 'red',
-    color: 'white',
-    fontSize: '4rem',
-    textTransform: 'uppercase',
-    padding: '1rem',
-    '@media (max-width: 780px)': {
-      padding: '2rem',
-    },
-  },
   product: {
     maxWidth: '28%',
     marginTop: '2rem',
+    marginBottom: '2rem',
     margin: '0 auto',
     '@media (max-width: 780px)': {
       maxWidth: '100%',
