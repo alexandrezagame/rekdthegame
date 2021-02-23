@@ -62,8 +62,8 @@ function checkForChildren(x) {
   console.log(elements);
 }
 var i = 0;
-var txt = "You've been REKD by a smooth criminal...";
-var speed = 220; /* The speed/duration of the effect in milliseconds */
+var txt = "You've been REKD...";
+var speed = 200; /* The speed/duration of the effect in milliseconds */
 function typeWriter() {
   if (i < txt.length) {
     document.querySelector('body').children[0].innerHTML += txt.charAt(i);
@@ -94,7 +94,7 @@ function destroy(x) {
     if (document.querySelector('body').children.length > 1) {
       setup();
     } else {
-      document.querySelector('body').children[0].style.backgroundImage = '';
+      // document.querySelector('body').children[0].style.backgroundImage = '';
       document.querySelector('body').children[0].style.backgroundColor =
         'black';
       typeWriter();
