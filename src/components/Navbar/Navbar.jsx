@@ -62,7 +62,7 @@ function checkForChildren(x) {
   console.log(elements);
 }
 var i = 0;
-var txt = "You've been REKD by a smooth criminal.";
+var txt = "You've been REKD by a smooth criminal...";
 var speed = 220; /* The speed/duration of the effect in milliseconds */
 function typeWriter() {
   if (i < txt.length) {
@@ -117,7 +117,7 @@ const Navbar = ({ products, onAddToCart, totalItems }) => {
             <Button
               className={classes.skullButtonContainer}
               // variant="contained"
-              size="medium"
+              // color="secondary"
               onClick={() => {
                 setup();
               }}
