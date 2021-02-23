@@ -62,7 +62,7 @@ function checkForChildren(x) {
   console.log(elements);
 }
 var i = 0;
-var txt = "You've been REKD...";
+var txt = "You've been REKD... 🖕";
 var speed = 200; /* The speed/duration of the effect in milliseconds */
 function typeWriter() {
   if (i < txt.length) {
@@ -94,9 +94,9 @@ function destroy(x) {
     if (document.querySelector('body').children.length > 1) {
       setup();
     } else {
-      document.querySelector('body').children[0].style.color = '#C40607';
+      document.querySelector('body').children[0].style.color = 'white';
       document.querySelector('body').children[0].style.backgroundColor =
-        'black';
+        '#C40607';
       typeWriter();
     }
   });
