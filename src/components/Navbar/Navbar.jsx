@@ -94,7 +94,7 @@ function destroy(x) {
     if (document.querySelector('body').children.length > 1) {
       setup();
     } else {
-      // document.querySelector('body').children[0].style.backgroundImage = '';
+      document.querySelector('body').children[0].style.color = '#C40607';
       document.querySelector('body').children[0].style.backgroundColor =
         'black';
       typeWriter();
