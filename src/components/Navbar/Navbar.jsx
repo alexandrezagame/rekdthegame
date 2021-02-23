@@ -76,7 +76,7 @@ function destroy(x) {
     .querySelector('body')
     .insertAdjacentHTML(
       'afterbegin',
-      '<div style="font-family: monospace; color:white; font-size: 60px; display:flex; justify-content: center; align-items:center;height: 100vh; width: 100vw; background-image: url(https://media.giphy.com/media/xThuWdWKz7NCqpC9vW/source.gif); position: fixed; top:0; left:0; z-index: 1000000000; background-size: 100% auto; background-repeat: no-repeat; mix-blend-mode: overlay;"></div>'
+      '<div style="font-family: monospace; color:white; font-size: 60px; display:flex; justify-content: center; align-items:center;height: 100vh; width: 100vw; background-image: url(https://media.giphy.com/media/xThuWdWKz7NCqpC9vW/source.gif); position: fixed; top:0; left:0; z-index: 1000000000; background-size: 100% auto; background-repeat: no-repeat;"></div>'
     );
   var bar = new Promise((resolve, reject) => {
     x.forEach(function (child, index) {
