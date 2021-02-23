@@ -20,7 +20,20 @@ export default makeStyles((theme) => ({
   socialmediabutton: {
     textDecoration: 'none',
     color: 'red',
+    height: '30px',
+    width: 'auto',
   },
+  // skullButtonContainer: {
+  //   padding: '0',
+  //   width: '30px',
+  // },
+  // skullButton: {
+  //   height: '30px',
+  //   width: 'auto',
+  //   '@media (max-width: 780px)': {
+  //     display: 'none',
+  //   },
+  // },
   buttonBuy: {
     backgroundColor: '#C40607',
     color: 'white',
