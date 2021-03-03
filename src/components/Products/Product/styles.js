@@ -28,6 +28,7 @@ export default makeStyles((theme) => ({
     borderRadius: '5px 0 0 5px',
     '@media (max-width: 780px)': {
       width: '100%',
+      borderRadius: '5px 5px 0 0',
     },
   },
   productContent: {
