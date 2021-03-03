@@ -114,7 +114,7 @@ function App() {
         />
         <Switch>
           <Route exact path="/">
-            <Banner />
+            {/* <Banner /> */}
             <Products products={products} onAddToCart={handleAddToCart} />
             <Video />
             <Hero />

@@ -24,7 +24,7 @@ const Video = () => {
             height="auto"
             controls={true}
             alt="video"
-            volume={0.1}
+            volume={0}
           />
         </div>
       </Container>

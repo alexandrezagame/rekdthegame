@@ -23,18 +23,7 @@ export default makeStyles((theme) => ({
     height: '30px',
     width: 'auto',
   },
-  // skullButtonContainer: {
-  //   padding: '0',
-  //   width: '30px',
-  // },
-  skullButton: {
-    height: '30px',
-    width: 'auto',
-    color: '#C40607',
-    '@media (max-width: 780px)': {
-      height: '20px',
-    },
-  },
+
   buttonBuy: {
     backgroundColor: '#C40607',
     color: 'white',

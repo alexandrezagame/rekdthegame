@@ -17,4 +17,12 @@ export default makeStyles(() => ({
     margin: '0',
     textAlign: 'center',
   },
+  skullButton: {
+    height: 'auto',
+    width: 'auto',
+    color: '#C40607',
+    '@media (max-width: 780px)': {
+      height: '20px',
+    },
+  },
 }));
