@@ -8,8 +8,8 @@ export default makeStyles(() => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    marginLeft: '5rem',
-    marginRight: '5rem',
+    marginLeft: '2rem',
+    marginRight: '2rem',
     '@media (max-width: 780px)': {
       flexDirection: 'column',
       flexWrap: 'wrap',

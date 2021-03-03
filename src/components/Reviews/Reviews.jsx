@@ -9,7 +9,7 @@ import r7 from '../../assets/logosandpics/7.png';
 import r8 from '../../assets/logosandpics/8.png';
 import r9 from '../../assets/logosandpics/9.png';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Typography } from '@material-ui/core';
+import { Paper, Typography, Card } from '@material-ui/core';
 import useStyles from './styles';
 
 const Reviews = () => {
@@ -42,6 +42,7 @@ const Reviews = () => {
             />
           ))}
         </Carousel>
+
         <Carousel
           className={classes.carousel}
           autoPlay={false}

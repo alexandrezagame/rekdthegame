@@ -27,6 +27,7 @@ export default makeStyles(() => ({
     height: '50vh',
     width: '100%',
     margin: '0 auto',
+    borderRadius: '5px',
     '@media (max-width: 780px)': {
       height: '30vh',
       width: 'auto',

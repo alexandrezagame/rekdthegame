@@ -15,7 +15,7 @@ export default makeStyles(() => ({
     borderRadius: '20px',
     padding: '1rem',
     textAlign: 'center',
-    boxShadow: '0 5px 15px rgba(0, 0, 0, 0.1)',
+    // boxShadow: '0 5px 15px rgba(0, 0, 0, 0.1)',
     width: '50vw',
     margin: '0',
     '@media (max-width: 780px)': {
