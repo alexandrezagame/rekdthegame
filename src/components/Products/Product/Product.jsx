@@ -57,10 +57,10 @@ export default function Product({ product, onAddToCart }) {
           <Typography
             dangerouslySetInnerHTML={{ __html: product.description }}
             variant="body2"
-            color="textSecondary"
+            color="white"
             component="p"
           ></Typography>
-          <Typography variant="h5" color="textSecondary" component="h5">
+          <Typography variant="h5" color="white" component="h5">
             ${product.price.formatted}
           </Typography>
 

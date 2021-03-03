@@ -6,7 +6,8 @@ export default makeStyles((theme) => ({
     maxWidth: '90vw',
     marginTop: '2rem',
     margin: '0 auto',
-    backgroundColor: 'white',
+    backgroundColor: '#C40607',
+    color: 'white',
     '@media (max-width: 780px)': {
       maxWidth: '100vw',
       maring: '0',
@@ -14,6 +15,7 @@ export default makeStyles((theme) => ({
   },
   productCard: {
     display: 'flex',
+    color: 'white',
     '@media (max-width: 780px)': {
       display: 'flex',
       flexDirection: 'column',
@@ -41,8 +43,8 @@ export default makeStyles((theme) => ({
     margin: '0 auto',
   },
   productButton: {
-    backgroundColor: '#C40607',
-    color: 'white',
+    backgroundColor: 'white',
+    color: '#C40607',
     '&:hover': {
       cursor: `url(${fuCursor}), pointer`,
       backgroundColor: '#FE654F',
