@@ -27,6 +27,7 @@ export default makeStyles(() => ({
   contactDescription: {
     margin: '0 50px',
     fontSize: '1.2rem',
+    fontFamily: 'Nunito Sans, sans-serif',
   },
   formGroup: {
     padding: '1rem',
@@ -72,11 +73,12 @@ export default makeStyles(() => ({
   formControlCard: {
     background: 'white',
     margin: '0 auto',
-    border: '5px solid red',
+    border: '5px solid',
     borderRadius: '15px',
     height: '350px',
     width: '250px',
     padding: '15px',
+    fontFamily: 'RocknRoll One, sans-serif',
   },
   submitButton: {
     padding: '1rem',

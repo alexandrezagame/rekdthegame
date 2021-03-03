@@ -24,7 +24,8 @@ export default makeStyles((theme) => ({
   },
   splashText: {
     marginBottom: '1rem',
-    fontSize: '1.5rem',
+    fontSize: '2rem',
+    fontFamily: 'RocknRoll One, sans-serif',
   },
   splashButton: {
     width: 'auto',
