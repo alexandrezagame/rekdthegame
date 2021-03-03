@@ -6,14 +6,14 @@ export default makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '5rem',
-    marginBottom: '5rem',
+    // marginTop: '3rem',
+    // marginBottom: '5rem',
   },
   title: {
     display: 'flex',
     justifyContent: 'center',
     marginTop: '5%',
-    marginBottom: '5%',
+    // marginBottom: '5%',
   },
   emptyButton: {
     minWidth: '150px',
@@ -32,10 +32,10 @@ export default makeStyles((theme) => ({
   },
   cardDetails: {
     display: 'flex',
-    marginTop: '5%',
+    marginTop: '3%',
     width: '100%',
-    height: '20vh',
-    justifyContent: 'space-between',
+    height: 'auto',
+    justifyContent: 'space-around',
   },
   emptyCartImage: {
     width: '30vw',

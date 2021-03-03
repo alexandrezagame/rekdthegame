@@ -4,12 +4,15 @@ export default makeStyles(() => ({
   media: {
     height: 260,
   },
+  // cartItem: {
+  //   width: '30vw',
+  // },
   cardContent: {
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
   },
-  cartActions: {
-    justifyContent: 'space-between',
+  cardActions: {
+    justifyContent: 'center',
   },
   buttons: {
     display: 'flex',

@@ -26,7 +26,15 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
 
   const renderCart = () => (
     <>
-      <Grid container spacing={3}>
+      <Grid
+        container
+        spacing={3}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          // flexDirection: 'column',
+        }}
+      >
         {cart.line_items.map((lineItem) => (
           <Grid item xs={12} sm={4} key={lineItem.id}>
             <CartItem
