@@ -17,7 +17,7 @@ const Contact = () => {
           <div className={classes.contactDescription}>
             <p>
               We believe you are smarter than you look and got plenty of ideas
-              to share in that messed up head of yours. Agaist our lawyer's
+              to share in that messed up head of yours. Against our lawyer's
               advice we will let you decide what we should write on the next
               cards we print!
             </p>
