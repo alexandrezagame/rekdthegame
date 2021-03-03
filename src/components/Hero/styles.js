@@ -10,7 +10,7 @@ export default makeStyles((theme) => ({
     margin: '0 auto',
     flexWrap: 'nowrap',
     '@media (max-width: 780px)': {
-      maxWidth: '90vw',
+      maxWidth: '100vw',
       flexWrap: 'wrap',
     },
   },
@@ -21,6 +21,7 @@ export default makeStyles((theme) => ({
     margin: '0 auto',
     '@media (max-width: 780px)': {
       maxWidth: '100%',
+      marginTop: '0.5rem',
     },
   },
   productCardImage: {

@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 import useStyles from './styles';
 import { useAlert } from 'react-alert';
+import { Paper } from '@material-ui/core';
 
 const randomAlertMessage = () => {
   const quoteArray = [
@@ -40,7 +41,7 @@ export default function Product({ product, onAddToCart }) {
   const handleAddToCart = () => onAddToCart(product.id, 1);
 
   return (
-    <Card className={classes.product}>
+    <Paper elevation={3} className={classes.product}>
       <CardActionArea className={classes.productCard}>
         <CardMedia
           className={classes.productCardImage}
@@ -87,6 +88,6 @@ export default function Product({ product, onAddToCart }) {
           </CardActions>
         </CardContent>
       </CardActionArea>
-    </Card>
+    </Paper>
   );
 }
