@@ -5,7 +5,8 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   content: {
     marginTop: '2rem',
-    backgroundColor: '#fbfbfb',
+    marginBottom: '2rem',
+    backgroundColor: 'white',
     height: '100vh',
     '@media (max-width: 780px)': {
       // paddingBottom: '2rem',
@@ -37,6 +38,7 @@ export default makeStyles((theme) => ({
   },
   productParts: {
     marginBottom: '1rem',
+    fontFamily: 'Nunito Sans, sans-serif',
   },
   productButton: {
     marginBottom: '1rem',

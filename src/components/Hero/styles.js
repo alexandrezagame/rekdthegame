@@ -8,6 +8,7 @@ export default makeStyles((theme) => ({
     flexDirection: 'row',
     maxWidth: '100vw',
     margin: '0 auto',
+
     flexWrap: 'nowrap',
     '@media (max-width: 780px)': {
       maxWidth: '100vw',
@@ -30,5 +31,7 @@ export default makeStyles((theme) => ({
   productContent: {
     padding: '0.5rem',
     textAlign: 'justify',
+    boxShadow: 'none',
+    border: 'none',
   },
 }));
