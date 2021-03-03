@@ -46,16 +46,6 @@ const Navbar = ({ products, onAddToCart, totalItems }) => {
     <>
       <AppBar position="fixed" color="inherit">
         <Toolbar className={classes.appBar}>
-          <div className={classes.socialmediabutton}>
-            {/* <Button
-              className={classes.skullButtonContainer}
-              onClick={() => {
-                setup();
-              }}
-            >
-              <FaSkull className={classes.skullButton} />
-            </Button> */}
-          </div>
           <div className={classes.logoDiv}>
             <Typography
               component={Link}
@@ -72,7 +62,7 @@ const Navbar = ({ products, onAddToCart, totalItems }) => {
               />
             </Typography>
           </div>
-          <div className={classes.buttonCart}>
+          <div className={classes.buttonCartLeft}>
             <Button
               variant="contained"
               className={classes.buttonBuy}
@@ -84,6 +74,8 @@ const Navbar = ({ products, onAddToCart, totalItems }) => {
               {' '}
               GET REKD
             </Button>
+          </div>
+          <div className={classes.buttonCartRight}>
             <IconButton
               component={Link}
               to="/cart"

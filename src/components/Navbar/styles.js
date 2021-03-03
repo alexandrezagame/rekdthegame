@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import fuCursor from '../../assets/cursor/xp-middle-finger.cur';
 
-export default makeStyles((theme) => ({
+export default makeStyles(() => ({
   appBar: {
     backgroundColor: '#FBFBFB',
     display: 'flex',
@@ -15,12 +15,6 @@ export default makeStyles((theme) => ({
   },
   image: {
     height: '70px',
-    width: 'auto',
-  },
-  socialmediabutton: {
-    textDecoration: 'none',
-    color: 'red',
-    height: '30px',
     width: 'auto',
   },
 
