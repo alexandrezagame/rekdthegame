@@ -47,7 +47,10 @@ const Review = ({ checkoutToken, shippingData }) => {
             <ListItem style={{ padding: '10px 0' }}>
               <ListItemText primary="Total" />
               <Typography variant="subtitle1" style={{ fontWeight: 700 }}>
-                ${checkoutToken.live.subtotal.raw + country.price.raw}
+                $
+                {(checkoutToken.live.subtotal.raw + country.price.raw).toFixed(
+                  2
+                )}
               </Typography>
             </ListItem>
           </List>
