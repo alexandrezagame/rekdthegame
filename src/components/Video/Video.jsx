@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography } from '@material-ui/core';
+import { Container, Typography, Paper } from '@material-ui/core';
 import ReactPlayer from 'react-player';
 import video from '../../assets/video/promovideo.mp4';
 import useStyles from './styles';
@@ -14,7 +14,11 @@ const Video = () => {
         </Typography>
       </div>
       <Container className={classes.videoContainer}>
-        <div className={classes.videoWrapper}>
+        <Paper
+          elevation={3}
+          style={{ padding: '0.3rem', backgroundColor: '#C40607' }}
+          className={classes.videoWrapper}
+        >
           <ReactPlayer
             className={classes.video}
             url={video}
@@ -26,7 +30,7 @@ const Video = () => {
             alt="video"
             volume={0}
           />
-        </div>
+        </Paper>
       </Container>
     </div>
   );

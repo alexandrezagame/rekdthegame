@@ -3,12 +3,17 @@ import fuCursor from '../../assets/cursor/xp-middle-finger.cur';
 
 export default makeStyles(() => ({
   contactContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    marginTop: '2rem',
-    marginBottom: '2rem',
-    // padding: '5rem 0',
+    // display: 'flex',
+    width: '50%',
+    // flexDirection: 'column',
+    // alignItems: 'center',
+    // marginTop: '2rem',
+    // marginBottom: '2rem',
+    margin: '1rem auto',
+    '@media (max-width: 780px)': {
+      width: '100%',
+      // margin: '2rem 0.5rem',
+    },
   },
   contactForm: {
     background: 'white',

@@ -4,6 +4,7 @@ export default makeStyles(() => ({
     marginTop: '2rem',
     display: 'flex',
     alignItems: 'center',
+    backgroundColor: 'white',
   },
   videoWrapper: {
     margin: '0 200px',

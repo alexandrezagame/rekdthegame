@@ -85,7 +85,7 @@ const PaymentForm = ({
                   color="primary"
                 >
                   {/* Pay {checkoutToken.live.subtotal.formatted_with_symbol}  */}
-                  GET REKD
+                  PURCHASE
                 </Button>
               </div>
             </form>

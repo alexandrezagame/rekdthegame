@@ -1,6 +1,6 @@
 import React from 'react';
 import useStyles from './styles';
-import { Button, Typography } from '@material-ui/core';
+import { Button, Typography, Paper } from '@material-ui/core';
 
 const Contact = () => {
   const classes = useStyles();
@@ -12,7 +12,7 @@ const Contact = () => {
           <h2>Wanna submit a card idea?</h2>
         </Typography>
       </div>
-      <div className={classes.contactContainer}>
+      <Paper elevation={3} className={classes.contactContainer}>
         <article className={classes.contactForm}>
           <div className={classes.contactDescription}>
             <p>
@@ -68,7 +68,7 @@ const Contact = () => {
             </Button>
           </form>
         </article>
-      </div>
+      </Paper>
     </div>
   );
 };
