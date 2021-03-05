@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(() => ({
   footerContainer: {
     minWidth: '100%',
-    backgroundColor: 'white',
+    backgroundColor: '#ffffff',
   },
   contactInfo: {
     color: 'black',

@@ -7,7 +7,7 @@ export default makeStyles(() => ({
   carouselContainer: {
     display: 'flex',
 
-    backgroundColor: 'white',
+    backgroundColor: 'FAFAFA',
     margin: '0 auto',
     '@media (max-width: 780px)': {
       flexWrap: 'wrap',
