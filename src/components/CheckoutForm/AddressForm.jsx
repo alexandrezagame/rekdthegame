@@ -152,7 +152,11 @@ const AddressForm = ({ checkoutToken, next }) => {
             <Button component={Link} variant="outlined" to="/cart">
               Back to Cart
             </Button>
-            <Button type="submit" variant="contained" color="primary">
+            <Button
+              type="submit"
+              variant="contained"
+              style={{ backgroundColor: '#C40607', color: 'white' }}
+            >
               Next
             </Button>
           </div>

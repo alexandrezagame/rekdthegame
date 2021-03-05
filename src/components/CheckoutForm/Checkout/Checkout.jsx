@@ -9,7 +9,7 @@ import {
   CircularProgress,
   Divider,
   Button,
-} from "@material-ui/core";
+} from '@material-ui/core';
 import AddressForm from '../AddressForm';
 import { commerce } from '../../../lib/commerce';
 import useStyles from './styles';
@@ -36,7 +36,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
           const token = await commerce.checkout.generateToken(cart.id, {
             type: 'cart',
           });
-          console.log('TOKEN', token)
+          // console.log('TOKEN', token)
           setCheckoutToken(token);
         } catch (error) {
           if (activeStep !== steps.length) {
@@ -88,7 +88,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
     );
   }
 
-  const Form = () => 
+  const Form = () =>
     activeStep === 0 ? (
       <AddressForm
         checkoutToken={checkoutToken}
@@ -105,33 +105,32 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
         onCaptureCheckout={onCaptureCheckout}
       />
     );
-  
 
   return (
     <>
-        <CssBaseline />
-        <div className={classes.toolbar} />
-        <main className={classes.layout}>
-          <Paper className={classes.paper}>
-            <Typography variant="h4" align="center">
-              Checkout
-            </Typography>
-            <Stepper activeStep={activeStep} className={classes.stepper}>
-              {steps.map((label) => (
-                <Step key={label}>
-                  <StepLabel>{label}</StepLabel>
-                </Step>
-              ))}
-            </Stepper>
-            {activeStep === steps.length ? (
-              <Confirmation />
-            ) : (
-              checkoutToken && <Form />
-            )}
-          </Paper>
-        </main>
-      </>
-  )
+      <CssBaseline />
+      <div className={classes.toolbar} />
+      <main className={classes.layout}>
+        <Paper className={classes.paper}>
+          <Typography variant="h4" align="center">
+            Checkout
+          </Typography>
+          <Stepper activeStep={activeStep} className={classes.stepper}>
+            {steps.map((label) => (
+              <Step key={label}>
+                <StepLabel>{label}</StepLabel>
+              </Step>
+            ))}
+          </Stepper>
+          {activeStep === steps.length ? (
+            <Confirmation />
+          ) : (
+            checkoutToken && <Form />
+          )}
+        </Paper>
+      </main>
+    </>
+  );
 };
 
 export default Checkout;

@@ -82,7 +82,7 @@ const PaymentForm = ({
                   type="submit"
                   variant="contained"
                   disabled={!stripe}
-                  color="primary"
+                  style={{ backgroundColor: '#C40607', color: 'white' }}
                 >
                   {/* Pay {checkoutToken.live.subtotal.formatted_with_symbol}  */}
                   PURCHASE
