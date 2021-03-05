@@ -13,7 +13,7 @@ import FormInput from './CustomTextfield';
 import { commerce } from '../../lib/commerce';
 
 const AddressForm = ({ checkoutToken, next }) => {
-  console.log('HELLO ARE WE HERE?');
+  // console.log('HELLO ARE WE HERE?');
   const [shippingCountries, setShippingCountries] = useState([]);
   const [shippingCountry, setShippingCountry] = useState('');
   const [shippingSubdivisions, setShippingSubdivisions] = useState([]);

@@ -60,7 +60,7 @@ const PaymentForm = ({
       nextStep();
     }
   };
-  console.log('SHIPPINGDARTA', shippingData)
+  // console.log('SHIPPINGDARTA', shippingData);
   return (
     <div>
       <Review shippingData={shippingData} checkoutToken={checkoutToken} />
@@ -84,7 +84,8 @@ const PaymentForm = ({
                   disabled={!stripe}
                   color="primary"
                 >
-                  Pay {checkoutToken.live.subtotal.formatted_with_symbol}
+                  {/* Pay {checkoutToken.live.subtotal.formatted_with_symbol}  */}
+                  GET REKD
                 </Button>
               </div>
             </form>
