@@ -6,14 +6,34 @@ export default makeStyles(() => ({
   },
   carouselContainer: {
     display: 'flex',
-
+    justifyContent: 'space-around',
+    alignContent: 'center',
     backgroundColor: 'FAFAFA',
     margin: '0 auto',
-    '@media (max-width: 780px)': {
-      flexWrap: 'wrap',
-    },
     marginTop: '2rem',
     marginBottom: '2rem',
+    '@media (max-width: 780px)': {
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+    },
+  },
+  carouselDiv: {
+    width: '30vw',
+    // backgroundColor: 'yellow',
+    '@media (max-width: 780px)': {
+      width: '100vw',
+      display: 'flex',
+      justifyContent: 'center',
+    },
+  },
+  carousel: {
+    width: '100%',
+    margin: '0 auto',
+    '@media (max-width: 780px)': {
+      height: '30vh',
+      width: 'auto',
+      marginTop: '0.5rem',
+    },
   },
   carouselTitle: {
     textAlign: 'center',
@@ -31,16 +51,7 @@ export default makeStyles(() => ({
     '@media (max-width: 780px)': {
       height: '30vh',
       width: 'auto',
-    },
-  },
-  carousel: {
-    width: '30%',
-    margin: '0 auto',
-    '@media (max-width: 780px)': {
-      height: '30vh',
-      width: 'auto',
       margin: '0 auto',
-      marginTop: '0.5rem',
     },
   },
 }));

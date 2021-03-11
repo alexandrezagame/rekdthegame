@@ -9,7 +9,7 @@ import r7 from '../../assets/logosandpics/7.png';
 import r8 from '../../assets/logosandpics/8.png';
 import r9 from '../../assets/logosandpics/9.png';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Typography, Card } from '@material-ui/core';
+import { Typography, Card, Container } from '@material-ui/core';
 import useStyles from './styles';
 
 const Reviews = () => {
@@ -27,52 +27,65 @@ const Reviews = () => {
         </Typography>
       </div>
       <div className={classes.carouselContainer}>
-        <Carousel
-          className={classes.carousel}
-          autoPlay={false}
-          interval="6000"
-          indicators={true}
-        >
-          {items1.map((item, i) => (
-            <img
-              key={i}
-              src={item}
-              className={classes.carouselImage}
-              alt="review"
-            />
-          ))}
-        </Carousel>
+        <div className={classes.carouselDiv}>
+          <Carousel
+            className={classes.carousel}
+            autoPlay={true}
+            interval="6000"
+            indicators={false}
+            animation="fade"
+            navButtonsAlwaysInvisible={true}
+          >
+            {items1.map((item, i) => (
+              <img
+                key={i}
+                src={item}
+                className={classes.carouselImage}
+                alt="review"
+              />
+            ))}
+          </Carousel>
+        </div>
 
-        <Carousel
-          className={classes.carousel}
-          autoPlay={false}
-          interval="6000"
-          indicators={true}
-        >
-          {items2.map((item, i) => (
-            <img
-              key={i}
-              src={item}
-              className={classes.carouselImage}
-              alt="review"
-            />
-          ))}
-        </Carousel>
-        <Carousel
-          className={classes.carousel}
-          autoPlay={false}
-          interval="6000"
-          indicators={true}
-        >
-          {items3.map((item, i) => (
-            <img
-              key={i}
-              src={item}
-              className={classes.carouselImage}
-              alt="review"
-            />
-          ))}
-        </Carousel>
+        <div className={classes.carouselDiv}>
+          <Carousel
+            className={classes.carousel}
+            autoPlay={true}
+            interval="6000"
+            indicators={false}
+            animation="fade"
+            navButtonsAlwaysInvisible={true}
+          >
+            {items2.map((item, i) => (
+              <img
+                key={i}
+                src={item}
+                className={classes.carouselImage}
+                alt="review"
+              />
+            ))}
+          </Carousel>
+        </div>
+
+        <div className={classes.carouselDiv}>
+          <Carousel
+            className={classes.carousel}
+            autoPlay={true}
+            interval="6000"
+            indicators={false}
+            animation="fade"
+            navButtonsAlwaysInvisible={true}
+          >
+            {items3.map((item, i) => (
+              <img
+                key={i}
+                src={item}
+                className={classes.carouselImage}
+                alt="review"
+              />
+            ))}
+          </Carousel>
+        </div>
       </div>
     </div>
   );
