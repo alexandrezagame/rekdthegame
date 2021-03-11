@@ -1,6 +1,6 @@
 import React from 'react';
 import useStyles from './styles';
-import { Button, Typography, Paper } from '@material-ui/core';
+import { Button, Typography, Paper, Container } from '@material-ui/core';
 
 const Contact = () => {
   const classes = useStyles();
@@ -12,7 +12,7 @@ const Contact = () => {
           <h2>Wanna submit a card idea?</h2>
         </Typography>
       </div>
-      <Paper elevation={3} className={classes.contactContainer}>
+      <Container className={classes.contactContainer}>
         <article className={classes.contactForm}>
           <div className={classes.contactDescription}>
             <p>
@@ -31,12 +31,15 @@ const Contact = () => {
                 name="name"
                 placeholder="your name"
                 className={classes.formControl}
+                style={{ width: '250px' }}
               />
+              <br></br>
               <input
                 type="email"
                 name="email"
                 placeholder="your email"
                 className={classes.formControl}
+                style={{ width: '250px' }}
               />
               <div className={classes.formControlCard}>
                 <textarea
@@ -68,7 +71,7 @@ const Contact = () => {
             </Button>
           </form>
         </article>
-      </Paper>
+      </Container>
     </div>
   );
 };

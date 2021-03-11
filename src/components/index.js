@@ -13,3 +13,4 @@ export { default as Video } from './Video/Video';
 export { default as Contact } from './Contact/Contact';
 export { default as Footer } from './Footer/Footer';
 export { default as PlayOnline } from './PlayOnline/PlayOnline';
+export { default as Newsletter } from './Newsletter/Newsletter';

@@ -17,6 +17,7 @@ import {
   Contact,
   Footer,
   PlayOnline,
+  Newsletter,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -121,6 +122,7 @@ function App() {
             <Reviews />
             <PlayOnline />
             <Contact />
+            <Newsletter />
             <DownloadableGame />
             <Footer />
           </Route>
