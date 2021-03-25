@@ -1,9 +1,7 @@
 import React from 'react';
 import './modal.css';
-import { Link } from 'react-router-dom';
 import { Container, Button, Typography } from '@material-ui/core';
 import useStyles from './styles';
-import pdf from '../../assets/pdf/rekdpdf.pdf';
 import DownloadModal from './DownloadModal';
 
 const DownloadableGame = () => {
@@ -22,14 +20,6 @@ const DownloadableGame = () => {
         </Typography>
 
         <Button className={classes.downloadButton} variant="contained">
-          {/* <Link
-            className={classes.downloadLink}
-            to={pdf}
-            target="_blank"
-            download
-          >
-            Download pdf
-          </Link> */}
           <DownloadModal />
         </Button>
       </Container>

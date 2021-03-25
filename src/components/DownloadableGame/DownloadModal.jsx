@@ -18,29 +18,31 @@ const DownloadModal = () => {
           </button>
           <div className="header"> Download Rekd </div>
           <div className="content">
-            <form action="https://formspree.io/f/mjvpznza" method="POST">
+            <form action="https://formspree.io/f/xayawdpo" method="POST">
               <div>
                 <input
                   type="text"
                   name="name"
-                  placeholder="your name"
-                  style={{ width: '250px' }}
+                  placeholder="Your Name"
+                  style={{ width: '200px', textAlign: 'center' }}
                 />
+                <br></br>
                 <br></br>
                 <input
                   type="email"
                   name="email"
-                  placeholder="your email"
-                  style={{ width: '250px' }}
+                  placeholder="Your Email"
+                  style={{ width: '200px', textAlign: 'center' }}
                 />
               </div>
               <Button
                 variant="contained"
                 type="submit"
                 style={{
-                  backgroundColor: '#C40607',
-                  color: 'white',
+                  backgroundColor: 'white',
+                  // color: '#C40607',
                   textDecoration: 'none',
+                  marginTop: '1rem',
                 }}
               >
                 <Link
