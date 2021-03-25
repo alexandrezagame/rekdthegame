@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom';
 import pdf from '../../assets/pdf/rekdpdf.pdf';
 import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
 import FileSaver from 'file-saver';
+import validator from 'email-validator';
 
 const DownloadModal = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
   function SubmitButton() {
-    if (name && email) {
+    if (name && email && validator.validate(email)) {
       return (
         <Button
           onClick={saveFile}
