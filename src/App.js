@@ -18,6 +18,7 @@ import {
   Footer,
   PlayOnline,
   Newsletter,
+  Questions,
 } from './components';
 
 import { positions, Provider } from 'react-alert';
@@ -124,6 +125,7 @@ function App() {
             <Contact />
             <Newsletter />
             <DownloadableGame />
+            <Questions />
             <Footer />
           </Route>
           <Route exact path="/cart">
