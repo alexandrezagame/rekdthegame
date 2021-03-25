@@ -19,9 +19,9 @@ const DownloadableGame = () => {
           </p>
         </Typography>
 
-        <Button className={classes.downloadButton} variant="contained">
-          <DownloadModal />
-        </Button>
+        {/* <Button className={classes.downloadButton} variant="contained"> */}
+        <DownloadModal />
+        {/* </Button> */}
       </Container>
     </>
   );

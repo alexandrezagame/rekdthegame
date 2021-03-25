@@ -1,13 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import pdf from '../../assets/pdf/rekdpdf.pdf';
+import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
+import FileSaver from 'file-saver';
 
 const DownloadModal = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+
+  function SubmitButton() {
+    if (name && email) {
+      return (
+        <Button
+          onClick={saveFile}
+          variant="contained"
+          type="submit"
+          target="_blank"
+          style={{
+            backgroundColor: 'white',
+            // color: '#C40607',
+            textDecoration: 'none',
+            marginTop: '1rem',
+          }}
+        >
+          Download
+        </Button>
+      );
+    } else {
+      return (
+        <Button
+          onClick={saveFile}
+          variant="contained"
+          type="submit"
+          disabled
+          target="_blank"
+          style={{
+            backgroundColor: 'white',
+            // color: '#C40607',
+            textDecoration: 'none',
+            marginTop: '1rem',
+          }}
+        >
+          Download
+        </Button>
+      );
+    }
+  }
+
+  const saveFile = () => {
+    FileSaver.saveAs(
+      // process.env.REACT_APP_CLIENT_URL + "/resources/cv.pdf",
+      pdf,
+      'rekdpdf.pdf'
+    );
+  };
+
   return (
     <Popup
-      trigger={<button className="button"> Open Modal </button>}
+      trigger={
+        <Button
+          className="button"
+          variant="contained"
+          size="large"
+          style={{
+            backgroundColor: 'white',
+            marginTop: '1rem',
+            color: '#c40607',
+          }}
+        >
+          Download
+        </Button>
+      }
       modal
       nested
     >
@@ -23,6 +88,9 @@ const DownloadModal = () => {
                 <input
                   type="text"
                   name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                   placeholder="Your Name"
                   style={{ width: '200px', textAlign: 'center' }}
                 />
@@ -31,29 +99,14 @@ const DownloadModal = () => {
                 <input
                   type="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                   placeholder="Your Email"
                   style={{ width: '200px', textAlign: 'center' }}
                 />
               </div>
-              <Button
-                variant="contained"
-                type="submit"
-                style={{
-                  backgroundColor: 'white',
-                  // color: '#C40607',
-                  textDecoration: 'none',
-                  marginTop: '1rem',
-                }}
-              >
-                <Link
-                  className="downloadButton"
-                  to={pdf}
-                  target="_blank"
-                  download
-                >
-                  Download
-                </Link>
-              </Button>
+              <SubmitButton />
             </form>
           </div>
         </div>
