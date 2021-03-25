@@ -25,4 +25,9 @@ export default makeStyles(() => ({
       height: '20px',
     },
   },
+  faqbutton: {
+    padding: '0',
+    color: '#C40607',
+    fontWeight: 'bold',
+  },
 }));

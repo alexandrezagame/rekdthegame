@@ -79,8 +79,8 @@ const Questions = () => {
   const styles = {
     // bgColor: 'white',
     titleTextColor: '#C40607',
-    rowTitleColor: 'dark-grey',
-    // rowContentColor: 'grey',
+    rowTitleColor: 'black',
+    rowContentColor: 'grey',
     arrowColor: '#C40607',
     // rowContentPaddingLeft: '1rem',
     transitionDuration: '0.3s',

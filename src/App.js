@@ -125,7 +125,7 @@ function App() {
             <Contact />
             <Newsletter />
             <DownloadableGame />
-            <Questions />
+
             <Footer />
           </Route>
           <Route exact path="/cart">
@@ -146,6 +146,9 @@ function App() {
           </Route>
           <Route exact path="/productpage">
             <ProductPage products={products} onAddToCart={handleAddToCart} />
+          </Route>
+          <Route exact path="/faqpage">
+            <Questions />
           </Route>
         </Switch>
       </Router>

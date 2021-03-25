@@ -93,6 +93,21 @@ const Footer = () => {
         <br></br>Email: hello@rekdthegame.com <br></br>Location: Somewhere where
         we don't pay taxes 🌴 <br></br>Phone: Disconnected
       </Typography>
+      <Typography
+        className={classes.contactInfo}
+        style={{ color: 'grey', fontWeight: 'normal' }}
+      >
+        Got questions? Check out our
+        <Button
+          component={Link}
+          to="/faqpage"
+          className={classes.faqbutton}
+          size="small"
+          // variant="contained"
+        >
+          FAQ
+        </Button>
+      </Typography>
       <Typography variant="body2" className={classes.footerCopyright}>
         © 2021, RekdTheGame - Website made painfully by our colorblind intern.
         Seriously, my God, it took for-e-ver. We still love you though.
