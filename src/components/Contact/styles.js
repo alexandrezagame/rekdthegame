@@ -48,6 +48,7 @@ export default makeStyles(() => ({
   },
   formControl: {
     width: '100%',
+    height: 'auto',
     padding: '0.5rem',
     background: 'white',
     border: '1px solid lightgrey',
