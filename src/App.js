@@ -35,6 +35,12 @@ const options = {
 
 const TRACKING_ID = 'G-NSBK9GMDF4'; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview('/');
+
+// function initializeReactGA() {
+//   ReactGA.initialize('G-NSBK9GMDF4');
+//   ReactGA.pageview('/');
+// }
 
 function App() {
   const [products, setProducts] = useState([]);
