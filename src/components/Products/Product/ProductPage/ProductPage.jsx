@@ -119,7 +119,7 @@ const ProductPage = ({ products, onAddToCart }) => {
       </div>
 
       <div className={classes.carouselTitle}>
-        <Typography>
+        <Typography gutterBottom>
           <h2>
             Got questions about the game? Check our{' '}
             <Button

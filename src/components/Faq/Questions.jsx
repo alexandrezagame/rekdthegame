@@ -22,7 +22,7 @@ const Questions = () => {
         content: `Oh yeah! This is what we call lightning rounds! The games are quick and not as drinking heavy, so you can play several rounds in a row. `,
       },
       {
-        title: 'Reccomended number of players?',
+        title: 'Recomended number of players?',
         content: `It depends. We've had amazing games with 3-5 players. Definitely the more the drunker.`,
       },
       {
