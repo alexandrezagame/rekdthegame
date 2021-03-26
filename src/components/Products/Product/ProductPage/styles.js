@@ -88,6 +88,16 @@ export default makeStyles((theme) => ({
       padding: '0',
     },
   },
+  carouselTitle: {
+    textAlign: 'center',
+    backgroundColor: '#C40607',
+    color: 'white',
+    fontSize: '4rem',
+    textTransform: 'uppercase',
+    padding: '1rem',
+    marginTop: '1rem',
+    marginBottom: '1rem',
+  },
   productImageUS: {
     width: '60%',
     height: 'auto',

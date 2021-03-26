@@ -72,7 +72,7 @@ const Navbar = ({ products, onAddToCart, totalItems }) => {
               }}
             >
               {' '}
-              GET REKD
+              BUY REKD
             </Button>
           </div>
           <div className={classes.buttonCartRight}>

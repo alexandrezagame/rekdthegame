@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import { Button } from '@material-ui/core';
-import pdf from '../../assets/pdf/rekdpdf.pdf';
-import FileSaver from 'file-saver';
+// import { Link } from 'react-router-dom';
+
 import validator from 'email-validator';
 
 const DownloadModal = () => {
@@ -13,7 +13,7 @@ const DownloadModal = () => {
     if (name && email && validator.validate(email)) {
       return (
         <Button
-          onClick={saveFile}
+          onClick={onlineRedirect}
           variant="contained"
           type="submit"
           target="_blank"
@@ -24,13 +24,13 @@ const DownloadModal = () => {
             marginTop: '1rem',
           }}
         >
-          Download
+          Play Online
         </Button>
       );
     } else {
       return (
         <Button
-          onClick={saveFile}
+          onClick={onlineRedirect}
           variant="contained"
           type="submit"
           disabled
@@ -42,18 +42,20 @@ const DownloadModal = () => {
             marginTop: '1rem',
           }}
         >
-          Download
+          Play Online
         </Button>
       );
     }
   }
 
-  const saveFile = () => {
-    FileSaver.saveAs(
-      // process.env.REACT_APP_CLIENT_URL + "/resources/cv.pdf",
-      pdf,
-      'rekdpdf.pdf'
-    );
+  const onlineRedirect = () => {
+    <a
+      href="http://lets-rekd.herokuapp.com/#/"
+      // target="_blank"
+      rel="noreferrer"
+    >
+      Online
+    </a>;
   };
 
   return (
@@ -64,12 +66,12 @@ const DownloadModal = () => {
           variant="contained"
           size="large"
           style={{
-            backgroundColor: 'white',
+            backgroundColor: '#c40607',
             marginTop: '1rem',
-            color: '#c40607',
+            color: 'white',
           }}
         >
-          Download
+          Play Online
         </Button>
       }
       modal
@@ -80,9 +82,9 @@ const DownloadModal = () => {
           <button className="close" onClick={close}>
             &times;
           </button>
-          <div className="header"> Download Rekd </div>
+          <div className="header"> Play Online </div>
           <div className="content">
-            <form action="https://formspree.io/f/xayawdpo" method="POST">
+            <form action="https://formspree.io/f/xknkwvyy" method="POST">
               <div>
                 <input
                   type="text"

@@ -44,7 +44,7 @@ export default makeStyles(() => ({
     padding: '1rem',
   },
   carouselImage: {
-    height: '50vh',
+    height: 'auto',
     width: '100%',
     margin: '0 auto',
     borderRadius: '5px',

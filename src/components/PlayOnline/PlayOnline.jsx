@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Button, Typography } from '@material-ui/core';
 import useStyles from './styles';
 import gameImage from '../../assets/logosandpics/game.JPG';
+import OnlineModal from './OnlineModal';
 
 const PlayOnline = () => {
   const classes = useStyles();
@@ -32,15 +33,16 @@ const PlayOnline = () => {
             </p>
           </Typography>
 
-          <Button className={classes.downloadButton} variant="contained">
-            <Link
+          {/* <Button className={classes.downloadButton} variant="contained"> */}
+          {/* <Link
               className={classes.downloadLink}
               to={{ pathname: 'http://lets-rekd.herokuapp.com/#/' }}
               target="_blank"
             >
               PLAY ONLINE
-            </Link>
-          </Button>
+            </Link> */}
+          <OnlineModal />
+          {/* </Button> */}
         </div>
       </Container>
     </div>

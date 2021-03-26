@@ -3,6 +3,9 @@ import useStyles from './styles';
 import Carousel from 'react-material-ui-carousel';
 import Button from '@material-ui/core/Button';
 import { useAlert } from 'react-alert';
+import { Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+
 import productImage2 from '../../../../assets/logosandpics/IMG-1774.JPG';
 import productImage3 from '../../../../assets/logosandpics/IMG-1786.JPG';
 import productImage4 from '../../../../assets/logosandpics/IMG-1792.JPG';
@@ -114,8 +117,30 @@ const ProductPage = ({ products, onAddToCart }) => {
           ))}
         </Carousel>
       </div>
+
+      <div className={classes.carouselTitle}>
+        <Typography>
+          <h2>
+            Got questions about the game? Check our{' '}
+            <Button
+              component={Link}
+              to="/faqpage"
+              // className={classes.faqbutton}
+              size="large"
+              variant="contained"
+              style={{ color: 'black' }}
+            >
+              FAQ
+            </Button>
+          </h2>
+        </Typography>
+      </div>
+
       <div className={classes.productInfoContainer}>
-        <div className={classes.productImageUsContainer}>
+        <div
+          className={classes.productImageUsContainer}
+          style={{ marginBottom: '1rem' }}
+        >
           <img
             src={aboutus}
             className={classes.productImageUS}
