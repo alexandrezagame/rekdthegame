@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import { Button } from '@material-ui/core';
-import pdf from '../../assets/pdf/rekdpdf.pdf';
+import pdf from '../../assets/pdf/rekdpdf2.pdf';
 import FileSaver from 'file-saver';
 import validator from 'email-validator';
 
