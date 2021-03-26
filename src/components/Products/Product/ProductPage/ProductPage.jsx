@@ -148,7 +148,10 @@ const ProductPage = ({ products, onAddToCart }) => {
             alt="game images"
           />
         </div>
-        <div className={classes.productInfo}>
+        <div
+          className={classes.productInfo}
+          style={{ height: '50vh', marginTop: '3rem' }}
+        >
           <h2 className={classes.productParts}>ABOUT US</h2>
           <p className={classes.productParts}>
             We are 3 drunken entrepreneurs with a blurry double vision. To make
