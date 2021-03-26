@@ -115,8 +115,8 @@ function App() {
 
   return (
     <Provider template={AlertTemplate} {...options}>
-      <RouteChangeTracker />
       <Router>
+        <RouteChangeTracker />
         <Navbar
           products={products}
           onAddToCart={handleAddToCart}
