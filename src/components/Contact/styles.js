@@ -2,17 +2,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import fuCursor from '../../assets/cursor/xp-middle-finger.cur';
 
 export default makeStyles(() => ({
+  container: {
+    width: '100vw',
+  },
   contactContainer: {
     // display: 'flex',
-    width: '50%',
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'center',
+    width: 'auto',
     // flexDirection: 'column',
     // alignItems: 'center',
-    // marginTop: '2rem',
-    // marginBottom: '2rem',
-    margin: '1rem auto',
+    // alignContent: 'center',
+
     '@media (max-width: 780px)': {
       width: '100%',
-      // margin: '2rem 0.5rem',
     },
   },
   contactForm: {
@@ -33,6 +37,10 @@ export default makeStyles(() => ({
     margin: '0 50px',
     fontSize: '1.2rem',
     fontFamily: 'Nunito Sans, sans-serif',
+    '@media (max-width: 780px)': {
+      width: '100%',
+      margin: '1rem 0.5rem',
+    },
   },
   formGroup: {
     padding: '1rem',

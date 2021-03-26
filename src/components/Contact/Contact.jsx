@@ -12,7 +12,8 @@ const Contact = () => {
           <h2>Wanna submit a card idea?</h2>
         </Typography>
       </div>
-      <Container className={classes.contactContainer}>
+
+      <div className={classes.contactContainer}>
         <article className={classes.contactForm}>
           <div className={classes.contactDescription}>
             <p>
@@ -24,6 +25,7 @@ const Contact = () => {
             <br></br>
             <h4>If you are funny enough of course...</h4>
           </div>
+
           <form action="https://formspree.io/f/mjvpznza" method="POST">
             <div className={classes.formGroup}>
               <input
@@ -71,7 +73,7 @@ const Contact = () => {
             </Button>
           </form>
         </article>
-      </Container>
+      </div>
     </div>
   );
 };

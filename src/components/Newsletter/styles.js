@@ -9,6 +9,8 @@ export default makeStyles(() => ({
     // alignItems: 'center',
     // marginTop: '2rem',
     // marginBottom: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
     margin: '1rem auto',
     '@media (max-width: 780px)': {
       width: '100%',
@@ -30,7 +32,7 @@ export default makeStyles(() => ({
     // maxWidth: '35rem',
   },
   contactDescription: {
-    margin: '0 50px',
+    // margin: '0 50px',
     fontSize: '1.2rem',
     fontFamily: 'Nunito Sans, sans-serif',
     '&& h4': {
