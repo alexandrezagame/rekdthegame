@@ -34,16 +34,16 @@ const PlayOnline = () => {
             </p>
           </Typography>
 
-          {/* <Button className={classes.downloadButton} variant="contained"> */}
-          {/* <Link
+          <Button className={classes.downloadButton} variant="contained">
+            <Link
               className={classes.downloadLink}
               to={{ pathname: 'http://lets-rekd.herokuapp.com/#/' }}
               target="_blank"
             >
               PLAY ONLINE
-            </Link> */}
-          <OnlineModal />
-          {/* </Button> */}
+            </Link>
+            {/* <OnlineModal /> */}
+          </Button>
         </div>
       </Container>
     </div>
