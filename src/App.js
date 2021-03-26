@@ -1,7 +1,12 @@
 import './App.css';
 import ReactGA from 'react-ga';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import { commerce } from './lib/commerce';
 import { useEffect, useState } from 'react';
 import {
@@ -163,6 +168,7 @@ function App() {
           <Route exact path="/faqpage">
             <Questions />
           </Route>
+          <Redirect to="/" />
         </Switch>
       </Router>
     </Provider>
