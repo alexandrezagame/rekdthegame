@@ -108,7 +108,11 @@ const Footer = () => {
           FAQ
         </Button>
       </Typography>
-      <Typography variant="body2" className={classes.footerCopyright}>
+      <Typography
+        variant="body2"
+        className={classes.footerCopyright}
+        gutterButtom
+      >
         © 2021, RekdTheGame - Website made painfully by our colorblind intern.
         Seriously, my God, it took for-e-ver. We still love you though.
         <Button

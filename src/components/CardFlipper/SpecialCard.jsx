@@ -47,8 +47,8 @@ const SpecialCard = () => {
     <ReactCardFlip
       isFlipped={isFlipped}
       flipDirection="vertical"
-      flipSpeedBackToFront={0.1}
-      flipSpeedFrontToBack={0.1}
+      flipSpeedBackToFront={0.3}
+      flipSpeedFrontToBack={0.3}
     >
       <div className={classes.card}>
         <img

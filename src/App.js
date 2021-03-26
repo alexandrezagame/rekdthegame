@@ -1,4 +1,6 @@
 import './App.css';
+import ReactGA from 'react-ga';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { commerce } from './lib/commerce';
 import { useEffect, useState } from 'react';
@@ -21,6 +23,8 @@ import {
   Questions,
 } from './components';
 
+import RouteChangeTracker from './components/RouteChangeTracker';
+
 import { positions, Provider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 
@@ -28,6 +32,9 @@ const options = {
   timeout: 5000,
   position: positions.BOTTOM_CENTER,
 };
+
+const TRACKING_ID = 'G-NSBK9GMDF4'; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -108,6 +115,7 @@ function App() {
 
   return (
     <Provider template={AlertTemplate} {...options}>
+      <RouteChangeTracker />
       <Router>
         <Navbar
           products={products}
