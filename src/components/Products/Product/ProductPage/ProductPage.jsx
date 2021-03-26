@@ -121,16 +121,17 @@ const ProductPage = ({ products, onAddToCart }) => {
       <div className={classes.carouselTitle}>
         <Typography gutterBottom>
           <h2>
-            Got questions about the game? Check our{' '}
+            Got questions about the game?
+            <br></br>
             <Button
               component={Link}
               to="/faqpage"
               // className={classes.faqbutton}
               size="large"
               variant="contained"
-              style={{ color: 'black' }}
+              style={{ color: 'black', backgroundColor: 'white' }}
             >
-              FAQ
+              Check our FAQ
             </Button>
           </h2>
         </Typography>
