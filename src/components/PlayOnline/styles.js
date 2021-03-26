@@ -68,6 +68,9 @@ export default makeStyles(() => ({
       width: '100%',
       height: 'auto',
     },
+    '&&:hover': {
+      transform: 'scale(1.5)',
+    },
   },
   imageContainer: {
     width: '50%',

@@ -4,6 +4,7 @@ import { Container, Button, Typography } from '@material-ui/core';
 import useStyles from './styles';
 import gameImage from '../../assets/logosandpics/game.JPG';
 import OnlineModal from './OnlineModal';
+import InnerImageZoom from 'react-inner-image-zoom';
 
 const PlayOnline = () => {
   const classes = useStyles();
