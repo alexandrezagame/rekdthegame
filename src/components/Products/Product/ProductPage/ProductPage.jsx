@@ -140,7 +140,7 @@ const ProductPage = ({ products, onAddToCart }) => {
       <div className={classes.productInfoContainer}>
         <div
           className={classes.productImageUsContainer}
-          style={{ marginBottom: '1rem' }}
+          style={{ marginBottom: '1rem', marginTop: '2rem' }}
         >
           <img
             src={aboutus}
