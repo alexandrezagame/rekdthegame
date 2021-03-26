@@ -10,7 +10,7 @@ const Video = () => {
     <div className={classes.container}>
       <div className={classes.carouselTitle}>
         <Typography>
-          <h2>A game by savages for savages</h2>
+          <h1>A game by savages for savages</h1>
         </Typography>
       </div>
       <Container className={classes.videoContainer}>

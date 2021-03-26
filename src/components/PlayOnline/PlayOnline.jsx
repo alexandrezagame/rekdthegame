@@ -13,7 +13,7 @@ const PlayOnline = () => {
     <div className={classes.container}>
       <div className={classes.carouselTitle}>
         <Typography>
-          <h2>PLAY ONLINE</h2>
+          <h1>PLAY ONLINE</h1>
         </Typography>
       </div>
       <Container className={classes.downloadContainer}>

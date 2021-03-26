@@ -9,7 +9,7 @@ const Contact = () => {
     <div className={classes.container}>
       <div className={classes.carouselTitle}>
         <Typography>
-          <h2>Wanna submit a card idea?</h2>
+          <h1>Wanna submit a card idea?</h1>
         </Typography>
       </div>
 

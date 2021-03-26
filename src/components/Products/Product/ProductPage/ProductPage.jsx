@@ -120,7 +120,7 @@ const ProductPage = ({ products, onAddToCart }) => {
 
       <div className={classes.carouselTitle}>
         <Typography gutterBottom>
-          <h2>
+          <h1>
             Got questions about the game?
             <br></br>
             <Button
@@ -133,7 +133,7 @@ const ProductPage = ({ products, onAddToCart }) => {
             >
               Check our FAQ
             </Button>
-          </h2>
+          </h1>
         </Typography>
       </div>
 
