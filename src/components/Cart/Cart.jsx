@@ -46,7 +46,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
         ))}
       </Grid>
       <div className={classes.cardDetails}>
-        <Typography variant="h4">
+        <Typography variant="h4" gutterBottom>
           Subtotal: {cart.subtotal.formatted_with_symbol}
         </Typography>
         <div>
@@ -81,6 +81,10 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
       <div className={classes.toolbar} />
       <Typography className={classes.title} variant="h3" gutterBottom>
         Your Shopping Cart
+      </Typography>
+      <Typography className={classes.title} variant="h5" gutterBottom>
+        If you are not in continental US, drop us an email at:
+        hello@rekdthegame.com to purchase the game.
       </Typography>
       {!cart.line_items.length ? renderEmptyCart() : renderCart()}
     </Container>
